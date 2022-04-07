@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>Jewellery</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/cormorant-garamond-v14-latin-500italic.woff2"
+      as="font"
+      crossorigin
+      />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/cormorant-garamond-v14-latin-600.woff2"
+      as="font"
+      crossorigin
+      />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/cormorant-garamond-v14-latin-700.woff2"
+      as="font"
+      crossorigin
+      />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/cormorant-garamond-v14-latin-italic.woff2"
+      as="font"
+      crossorigin
+      />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/poppins-v19-latin-500.woff2"
+      as="font"
+      crossorigin
+      />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/poppins-v19-latin-700.woff2"
+      as="font"
+      crossorigin
+      />
+    <link
+      rel="preload"
+      type="font/woff2"
+      href="./fonts/poppins-v19-latin-regular.woff2"
+      as="font"
+      crossorigin
+      />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__inner">
+          <!--Форма поиска-->
+          <form
+            class="page-header__search-form"
+            method="get"
+            action="https://echo.htmlacademy.ru/">
+            <button type="submit">
+              <svg width="14" height="14">
+                <use xlink:href="./img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </button>
+            <label>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                required
+                />Type here to search</label>
+          </form>
+
+          <a class="page-header__link">
+            <svg width="66" height="66">
+              <use xlink:href="./img/sprite_auto.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <ul class="page-header__user-list">
+            <li class="page-header__user-item">
+              <a href="#">Login</a>
+            </li>
+            <li class="page-header__user-item">
+              <a href="#">Cart
+                <svg width="20" height="18">
+                  <use xlink:href="./img/sprite_auto.svg#icon-basket"></use>
+                </svg>
+              </a>
+              <span>0</span>
+            </li>
+          </ul>
+        </div>
+
+        <nav class="page-header__nav page-header__nav--nojs">
+          <!--  main-nav--closed
+              main-nav--opened
+            -->
+            <button type="button"></button>
+            <span class="visually-hidden">Open menu</span>
+          <ul class="page-header__main-nav-list">
+            <li class="page-header__main-nav-item">
+              <a href="#">What&#39;s new</a>
+            </li>
+            <li class="page-header__main-nav-item">
+              <a href="#">Chokers</a>
+            </li>
+            <li class="page-header__main-nav-item">
+              <a href="#">Necklaces</a>
+            </li>
+            <li class="page-header__main-nav-item">
+              <a href="#">Rings</a>
+            </li>
+            <li class="page-header__main-nav-item">
+              <a href="#">Earrings</a>
+            </li>
+          </ul>
+
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item">
+              <a href="#">About CH</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#">Stores & Hours</a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

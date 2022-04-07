@@ -13,6 +13,13 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
 
+$color-wood-bark:                   #1d1613;
+$color-zorba:                       #9b9997;
+$color-very-dark-brown:             #564034;
+$color-medium-wood:                 #a87b62;
+$color-seashell:                    #f6f5f4;
+$color-desert-storm:                #f0eae4;
+
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
@@ -28,6 +35,9 @@ $fz-default:                        16px;
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
 $ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+
+$ff-poppins:                        "Poppins", "Verdana", sans-serif;
+$ff-cormorant-garamond:             "Cormorant Garamond", "Gramond", serif;
 
 // Animation
 // ---------------------------------
