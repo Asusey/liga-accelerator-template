@@ -28,7 +28,7 @@
   width: 100%;
   max-width: 1190px;
   margin: 0 auto;
-  padding: 30px 10px 0;
+  padding: 30px 10px 10px;
 
   @include vp-1023 {
     padding-left: 45px;
@@ -199,6 +199,12 @@
 }
 
 // page-header--closed
+.page-header--closed .page-header__wrapper {
+  @include vp-767 {
+    padding-bottom: 3px;
+  }
+}
+
 .page-header--closed .page-header__search-form {
   @include vp-1023 {
     display: none;
