@@ -6,19 +6,17 @@
   display: grid;
   grid-template-columns: 43% 1fr;
   grid-column-gap: 6.5%;
-  max-width: 1190px;
-  margin: 0 auto;
-  padding: 85px 10px 85px;
+  padding-top: 85px;
+  padding-bottom: 85px;
 
   @include vp-1023 {
-    padding: 48px 45px 47px;
+    padding-top: 48px;
+    padding-bottom: 47px;
     display: flex;
     flex-direction: column;
   }
 
   @include vp-767 {
-    padding-left: 15px;
-    padding-right: 15px;
     padding-bottom: 52px;
   }
 }
@@ -85,8 +83,6 @@
   &:focus {
     outline: none;
   }
-
-
 }
 
 .footer__box-feedback input::placeholder {

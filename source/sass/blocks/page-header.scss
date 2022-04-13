@@ -25,25 +25,20 @@
 }
 
 .page-header__wrapper {
-  width: 100%;
-  max-width: 1190px;
-  margin: 0 auto;
-  padding: 30px 10px 10px;
+  // width: 100%;
+  padding-top: 30px;
+  padding-bottom: 10px;
 
   @include vp-1023 {
-    padding-left: 45px;
-    padding-right: 45px;
     padding-bottom: 13px;
   }
 
   @include vp-767 {
     padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
-.page-header__wrapper button[type=button] {
+.page-header__wrapper button[type="button"] {
   display: none;
 }
 
@@ -58,7 +53,7 @@
   margin-top: 5px;
 }
 
-.page-header__search-form button[type=submit] {
+.page-header__search-form button[type="submit"] {
   cursor: pointer;
   padding: 0;
   background-color: $color-transparent;
@@ -146,6 +141,10 @@
 .page-header__user-item--basket a {
   padding-right: 2px;
   margin-right: 0;
+
+  @include vp-1023 {
+    font-size: 0;
+  }
 }
 
 .page-header__user-item:nth-child(2n) a {
@@ -200,7 +199,11 @@
 
 // page-header--closed
 .page-header--closed .page-header__wrapper {
+  padding-top: 30px;
+  //padding-bottom: 10px;
+
   @include vp-767 {
+    padding-top: 20px;
     padding-bottom: 3px;
   }
 }
@@ -211,7 +214,7 @@
   }
 }
 
-.page-header--closed button[type=button] {
+.page-header--closed button[type="button"] {
   @include vp-1023 {
     position: absolute;
     top: 55px;
@@ -244,12 +247,6 @@
 .page-header--closed .page-header__user-item--login {
   @include vp-1023 {
     display: none;
-  }
-}
-
-.page-header__user-item--basket a {
-  @include vp-1023 {
-    font-size: 0;
   }
 }
 
@@ -310,7 +307,6 @@
   @include vp-1023 {
     background-color: $color-medium-wood;
   }
-
 }
 
 .page-header--opened .page-header__search-form {
@@ -334,10 +330,9 @@
   @include vp-1023 {
     font-size: 0;
   }
-
 }
 
-.page-header--opened button[type=submit] {
+.page-header--opened button[type="submit"] {
   @include vp-1023 {
     position: absolute;
     top: 1px;
@@ -375,7 +370,7 @@
   }
 }
 
-.page-header--opened button[type=button] {
+.page-header--opened button[type="button"] {
   @include vp-1023 {
     position: absolute;
     top: 48px;
