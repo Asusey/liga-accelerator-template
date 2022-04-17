@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-arrow-footer" viewBox="0 0 30 11">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="filter-close-icon" viewBox="0 0 32 32">
+<circle cx="16" cy="16" r="16" fill="#1D1613"/>
+<path d="M16 14.4447L21.4447 9L23 10.5553L17.5553 16L23 21.4447L21.4447 23L16 17.5553L10.5553 23L9 21.4447L14.4447 16L9 10.5553L10.5553 9L16 14.4447Z" fill="white"/>
+</symbol><symbol id="icon-arrow-footer" viewBox="0 0 30 11">
 <path d="M0 5.5H29M29 5.5L23.5135 1M29 5.5L23.5135 10" stroke="white"/>
 </symbol><symbol id="icon-arrow-left-desktop" viewBox="0 0 30 11">
 <path d="M30 5.5L1 5.5M1 5.5L6.48649 10M1 5.5L6.48649 1" stroke="#A87B62"/>
