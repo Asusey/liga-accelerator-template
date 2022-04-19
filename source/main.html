@@ -64,7 +64,7 @@
         <!--модификатор opened для открытого меню-->
         <div class="page-header__wrapper container">
           <div class="page-header__inner">
-            <button type="button"></button>
+            <button type="button" data-open-menu></button>
             <span class="visually-hidden">Open menu</span>
             <!--Форма поиска-->
             <form
@@ -73,7 +73,7 @@
               action="https://echo.htmlacademy.ru/"
             >
               <button type="submit">
-                <svg class="page-header__search-img" width="14" height="14">
+                <svg width="14" height="14">
                   <use xlink:href="./img/sprite_auto.svg#icon-search"></use>
                 </svg>
               </button>
@@ -91,7 +91,7 @@
               <li class="page-header__user-item page-header__user-item--login">
                 <a
                   class="page-header__user-item-link page-header__user-item-link--login"
-                  href="#"
+                  href="login.html"
                   target="_blank"
                   >Login</a
                 >
@@ -110,21 +110,19 @@
           <nav class="page-header__nav">
             <ul class="page-header__main-nav-list">
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="#"
-                  >What&#39;s new</a
-                >
+                <a href="#">What&#39;s new</a>
               </li>
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="#">Chokers</a>
+                <a href="#">Chokers</a>
               </li>
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="#">Necklaces</a>
+                <a href="#">Necklaces</a>
               </li>
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="#">Rings</a>
+                <a href="#">Rings</a>
               </li>
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="#">Earrings</a>
+                <a href="#">Earrings</a>
               </li>
             </ul>
 
@@ -184,454 +182,324 @@
                 class="preview__new-product-item preview__new-product-item--amethyst"
               >
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-desktop.webp    1x,
-                        ./img/main/purple-gemstone-necklace-desktop@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-tablet.webp    1x,
-                        ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-mobile.webp    1x,
-                        ./img/main/purple-gemstone-necklace-mobile@2x.webp 2x
-                      "
-                    />
-                    <!-- 1x: 270px; 2x: 540px -->
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-desktop.jpg    1x,
-                        ./img/main/purple-gemstone-necklace-desktop@2x.jpg 2x
-                      "
-                    />
-                    <!-- 1x: 324px; 2x: 648px -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-tablet.jpg    1x,
-                        ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
-                      "
-                    />
-                    <!-- 1x: 130px; 2x: 260px -->
-                    <img
-                      src="./img/main/purple-gemstone-necklace-mobile.jpg"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-mobile@2x.jpg 2x
-                      "
-                      alt="Necklace with amethyst"
-                    />
-                  </picture>
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/purple-gemstone-necklace-tablet.webp    1x,
+                          ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
+
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
+                        "
+                        src="./img/main/purple-gemstone-necklace-tablet.jpg"
+                        alt="Necklace with amethyst"
+                    /></picture>
+                  </div>
                   <p>Necklace with amethyst</p>
                   <span>&#36; 145</span>
                 </a>
               </li>
-
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-desktop.webp    1x,
-                        ./img/main/layered-choker-necklace-desktop@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-tablet.webp    1x,
-                        ./img/main/layered-choker-necklace-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./img/main/layered-choker-necklace-mobile.webp    1x,
-                        ./img/main/layered-choker-necklace-mobile@2x.webp 2x
-                      "
-                    />
-                    <!-- 1x: 270px; 2x: 540px -->
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-desktop.jpg    1x,
-                        ./img/main/layered-choker-necklace-desktop@2x.jpg 2x
-                      "
-                    />
-                    <!-- 1x: 324px; 2x: 648px -->
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-tablet.jpg    1x,
-                        ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
-                      "
-                    />
-                    <!-- 1x: 130px; 2x: 260px -->
-                    <img
-                      src="./img/main/layered-choker-necklace-mobile.jpg"
-                      srcset="
-                        ./img/main/layered-choker-necklace-mobile@2x.jpg 2x
-                      "
-                      alt="Layered сhoker"
-                    />
-                  </picture>
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/layered-choker-necklace-tablet.webp    1x,
+                          ./img/main/layered-choker-necklace-tablet@2x.webp 2x
+                        "
+                      />
+                      <!-- 1x: 324px; 2x: 648px -->
+
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
+                        "
+                        src="./img/main/layered-choker-necklace-tablet.jpg"
+                        alt="Layered сhoker"
+                      />
+                    </picture>
+                  </div>
                   <p>Layered сhoker</p>
                   <span>&#36; 115</span>
                 </a>
               </li>
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/dainty-gold-necklace-desktop.webp    1x,
-                        ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
-                      "
-                    />
-                    <!-- 1x: 270px; 2x: 540px -->
-                    <img
-                      src="./img/main/dainty-gold-necklace-desktop.jpg"
-                      srcset="./img/main/dainty-gold-necklace-desktop@2x.jpg 2x"
-                      alt="Gold chain"
-                    />
-                  </picture>
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/dainty-gold-necklace-desktop.webp    1x,
+                          ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
+
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
+                        "
+                        src="./img/main/dainty-gold-necklace-desktop.jpg"
+                        alt="Layered сhoker"
+                    /></picture>
+                  </div>
                   <p>Gold chain</p>
                   <span>&#36; 215</span>
                 </a>
               </li>
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/galaxy-earrings-desktop.webp    1x,
-                        ./img/main/galaxy-earrings-desktop@2x.webp 2x
-                      "
-                    />
-                    <!-- 1x: 270px; 2x: 540px -->
-                    <img
-                      src="./img/main/galaxy-earrings-desktop.jpg"
-                      srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
-                      alt="Galaxy earrings"
-                    />
-                  </picture>
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/galaxy-earrings-desktop.webp    1x,
+                          ./img/main/galaxy-earrings-desktop@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
+
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
+                        src="./img/main/galaxy-earrings-desktop.jpg"
+                        alt="Galaxy earrings"
+                    /></picture>
+                  </div>
                   <p>Galaxy earrings</p>
                   <span>&#36; 95</span>
                 </a>
               </li>
-
-              <li class="preview__new-product-item">
+              <li
+                class="preview__new-product-item preview__new-product-item--amethyst"
+              >
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-desktop.webp    1x,
-                        ./img/main/purple-gemstone-necklace-desktop@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-tablet.webp    1x,
-                        ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-mobile.webp    1x,
-                        ./img/main/purple-gemstone-necklace-mobile@2x.webp 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-desktop.jpg    1x,
-                        ./img/main/purple-gemstone-necklace-desktop@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-tablet.jpg    1x,
-                        ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
-                      "
-                    />
-                    <img
-                      src="./img/main/purple-gemstone-necklace-mobile.jpg"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-mobile@2x.jpg 2x
-                      "
-                      alt="Necklace with amethyst"
-                    />
-                  </picture>
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/purple-gemstone-necklace-tablet.webp    1x,
+                          ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
+
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
+                        "
+                        src="./img/main/purple-gemstone-necklace-tablet.jpg"
+                        alt="Necklace with amethyst"
+                    /></picture>
+                  </div>
                   <p>Necklace with amethyst</p>
                   <span>&#36; 145</span>
                 </a>
               </li>
-
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-desktop.webp    1x,
-                        ./img/main/layered-choker-necklace-desktop@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-tablet.webp    1x,
-                        ./img/main/layered-choker-necklace-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./img/main/layered-choker-necklace-mobile.webp    1x,
-                        ./img/main/layered-choker-necklace-mobile@2x.webp 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-desktop.jpg    1x,
-                        ./img/main/layered-choker-necklace-desktop@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-tablet.jpg    1x,
-                        ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
-                      "
-                    />
-                    <img
-                      src="./img/main/layered-choker-necklace-mobile.jpg"
-                      srcset="
-                        ./img/main/layered-choker-necklace-mobile@2x.jpg 2x
-                      "
-                      alt="Layered сhoker"
-                    />
-                  </picture>
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/layered-choker-necklace-tablet.webp    1x,
+                          ./img/main/layered-choker-necklace-tablet@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
+
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
+                        "
+                        src="./img/main/layered-choker-necklace-tablet.jpg"
+                        alt="Layered сhoker"
+                    /></picture>
+                  </div>
                   <p>Layered сhoker</p>
                   <span>&#36; 115</span>
                 </a>
               </li>
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/dainty-gold-necklace-desktop.webp    1x,
-                        ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
-                      "
-                    />
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/dainty-gold-necklace-desktop.webp    1x,
+                          ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
 
-                    <img
-                      src="./img/main/dainty-gold-necklace-desktop.jpg"
-                      srcset="./img/main/dainty-gold-necklace-desktop@2x.jpg 2x"
-                      alt="Gold chain"
-                    />
-                  </picture>
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
+                        "
+                        src="./img/main/dainty-gold-necklace-desktop.jpg"
+                        alt="Layered сhoker"
+                    /></picture>
+                  </div>
                   <p>Gold chain</p>
                   <span>&#36; 215</span>
                 </a>
               </li>
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/galaxy-earrings-desktop.webp    1x,
-                        ./img/main/galaxy-earrings-desktop@2x.webp 2x
-                      "
-                    />
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/galaxy-earrings-desktop.webp    1x,
+                          ./img/main/galaxy-earrings-desktop@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
 
-                    <img
-                      src="./img/main/galaxy-earrings-desktop.jpg"
-                      srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
-                      alt="Galaxy earrings"
-                    />
-                  </picture>
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
+                        src="./img/main/galaxy-earrings-desktop.jpg"
+                        alt="Galaxy earrings"
+                    /></picture>
+                  </div>
                   <p>Galaxy earrings</p>
                   <span>&#36; 95</span>
                 </a>
               </li>
-              <li class="preview__new-product-item">
+              <li
+                class="preview__new-product-item preview__new-product-item--amethyst"
+              >
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-desktop.webp    1x,
-                        ./img/main/purple-gemstone-necklace-desktop@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-tablet.webp    1x,
-                        ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-mobile.webp    1x,
-                        ./img/main/purple-gemstone-necklace-mobile@2x.webp 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-desktop.jpg    1x,
-                        ./img/main/purple-gemstone-necklace-desktop@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-tablet.jpg    1x,
-                        ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
-                      "
-                    />
-                    <img
-                      src="./img/main/purple-gemstone-necklace-mobile.jpg"
-                      srcset="
-                        ./img/main/purple-gemstone-necklace-mobile@2x.jpg 2x
-                      "
-                      alt="Necklace with amethyst"
-                    />
-                  </picture>
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/purple-gemstone-necklace-tablet.webp    1x,
+                          ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
+
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
+                        "
+                        src="./img/main/purple-gemstone-necklace-tablet.jpg"
+                        alt="Necklace with amethyst"
+                    /></picture>
+                  </div>
                   <p>Necklace with amethyst</p>
                   <span>&#36; 145</span>
                 </a>
               </li>
-
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-desktop.webp    1x,
-                        ./img/main/layered-choker-necklace-desktop@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-tablet.webp    1x,
-                        ./img/main/layered-choker-necklace-tablet@2x.webp 2x
-                      "
-                    />
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./img/main/layered-choker-necklace-mobile.webp    1x,
-                        ./img/main/layered-choker-necklace-mobile@2x.webp 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-desktop.jpg    1x,
-                        ./img/main/layered-choker-necklace-desktop@2x.jpg 2x
-                      "
-                    />
-                    <source
-                      media="(min-width: 768px)"
-                      srcset="
-                        ./img/main/layered-choker-necklace-tablet.jpg    1x,
-                        ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
-                      "
-                    />
-                    <img
-                      src="./img/main/layered-choker-necklace-mobile.jpg"
-                      srcset="
-                        ./img/main/layered-choker-necklace-mobile@2x.jpg 2x
-                      "
-                      alt="Layered сhoker"
-                    />
-                  </picture>
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/layered-choker-necklace-tablet.webp    1x,
+                          ./img/main/layered-choker-necklace-tablet@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
+
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
+                        "
+                        src="./img/main/layered-choker-necklace-tablet.jpg"
+                        alt="Layered сhoker"
+                    /></picture>
+                  </div>
                   <p>Layered сhoker</p>
                   <span>&#36; 115</span>
                 </a>
               </li>
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/dainty-gold-necklace-desktop.webp    1x,
-                        ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
-                      "
-                    />
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/dainty-gold-necklace-desktop.webp    1x,
+                          ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
 
-                    <img
-                      src="./img/main/dainty-gold-necklace-desktop.jpg"
-                      srcset="./img/main/dainty-gold-necklace-desktop@2x.jpg 2x"
-                      alt="Gold chain"
-                    />
-                  </picture>
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="
+                          ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
+                        "
+                        src="./img/main/dainty-gold-necklace-desktop.jpg"
+                        alt="Layered сhoker"
+                    /></picture>
+                  </div>
                   <p>Gold chain</p>
                   <span>&#36; 215</span>
                 </a>
               </li>
               <li class="preview__new-product-item">
                 <a href="#">
-                  <picture>
-                    <source
-                      type="image/webp"
-                      media="(min-width: 1024px)"
-                      srcset="
-                        ./img/main/galaxy-earrings-desktop.webp    1x,
-                        ./img/main/galaxy-earrings-desktop@2x.webp 2x
-                      "
-                    />
+                  <div class="preview__image-container">
+                    <picture>
+                      <!-- 1x: 324px; 2x: 648px -->
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./img/main/galaxy-earrings-desktop.webp    1x,
+                          ./img/main/galaxy-earrings-desktop@2x.webp 2x
+                        " />
+                      <!-- 1x: 324px; 2x: 648px -->
 
-                    <img
-                      src="./img/main/galaxy-earrings-desktop.jpg"
-                      srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
-                      alt="Galaxy earrings"
-                    />
-                  </picture>
+                      <img
+                        width="324"
+                        height="340"
+                        srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
+                        src="./img/main/galaxy-earrings-desktop.jpg"
+                        alt="Galaxy earrings"
+                    /></picture>
+                  </div>
                   <p>Galaxy earrings</p>
                   <span>&#36; 95</span>
                 </a>
@@ -668,53 +536,27 @@
             <a class="blog__link link" href="#">Read All</a>
             <ul class="blog__list">
               <li class="blog__item">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/blog-care-desktop.webp    1x,
-                      ./img/main/blog-care-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/main/blog-care-tablet.webp    1x,
-                      ./img/main/blog-care-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/blog-care-mobile.webp    1x,
-                      ./img/main/blog-care-mobile@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 285px; 2x: 570px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/blog-care-desktop.jpg    1x,
-                      ./img/main/blog-care-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 339px; 2x: 678px -->
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/main/blog-care-tablet.jpg    1x,
-                      ./img/main/blog-care-tablet@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 290px; 2x: 580px -->
-                  <img
-                    src="./img/main/blog-care-mobile.jpg"
-                    srcset="./img/main/blog-care-mobile@2x.jpg 2x"
-                    alt="Designer earrings on beige background"
-                  />
-                </picture>
+                <div class="blog__image-container">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/blog-care-desktop.webp    1x,
+                        ./img/main/blog-care-desktop@2x.webp 2x
+                      "
+                    />
+
+                    <!-- 1x: 285px; 2x: 570px-->
+                    <img
+                      width="285"
+                      height="300"
+                      src="./img/main/blog-care-desktop.jpg"
+                      srcset="./img/main/blog-care-desktop@2x.jpg 2x"
+                      alt="Designer earrings on beige background"
+                    />
+                  </picture>
+                </div>
+
                 <div class="blog__article">
                   <time datetime="2019-09-30">September 30, 2019</time>
                   <p>How to care for your jewellery</p>
@@ -722,53 +564,26 @@
                 </div>
               </li>
               <li class="blog__item blog__item--power">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/blog-power-desktop.webp    1x,
-                      ./img/main/blog-power-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/main/blog-power-tablet.webp    1x,
-                      ./img/main/blog-power-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/blog-power-mobile.webp    1x,
-                      ./img/main/blog-power-mobile@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 285px; 2x: 570px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/blog-power-desktop.jpg    1x,
-                      ./img/main/blog-power-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 339px; 2x: 678px -->
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/main/blog-power-tablet.jpg    1x,
-                      ./img/main/blog-power-tablet@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 290px; 2x: 580px -->
-                  <img
-                    src="./img/main/blog-power-mobile.jpg"
-                    srcset="./img/main/blog-power-mobile@2x.jpg 2x"
-                    alt="Long designer earrings"
-                  />
-                </picture>
+                <div class="blog__image-container">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/blog-power-desktop.webp    1x,
+                        ./img/main/blog-power-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 285px; 2x: 570px-->
+
+                    <img
+                      width="285"
+                      height="300"
+                      src="./img/main/blog-power-desktop.jpg"
+                      srcset="./img/main/blog-power-desktop@2x.jpg 2x"
+                      alt="Designer earrings on beige background"
+                    />
+                  </picture>
+                </div>
                 <div class="blog__article blog__article--power">
                   <time datetime="2019-09-23">September 23, 2019</time>
                   <p>Power of crystals</p>
@@ -776,53 +591,28 @@
                 </div>
               </li>
               <li class="blog__item blog__item--trends">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/blog-trends-desktop.webp    1x,
-                      ./img/main/blog-trends-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/main/blog-trends-tablet.webp    1x,
-                      ./img/main/blog-trends-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/blog-trends-mobile.webp    1x,
-                      ./img/main/blog-trends-mobile@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 570px; 2x: 1140px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/blog-trends-desktop.jpg    1x,
-                      ./img/main/blog-trends-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 339px; 2x: 678px -->
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/main/blog-trends-tablet.jpg    1x,
-                      ./img/main/blog-trends-tablet@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 290px; 2x: 580px -->
-                  <img
-                    src="./img/main/blog-trends-mobile.jpg"
-                    srcset="./img/main/blog-trends-mobile@2x.jpg 2x"
-                    alt="The woman with the bracelet"
-                  />
-                </picture>
+                <div
+                  class="blog__image-container blog__image-container--trends"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/blog-trends-desktop.webp    1x,
+                        ./img/main/blog-trends-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 570px; 2x: 1140px -->
+
+                    <img
+                      width="570"
+                      height="630"
+                      src="./img/main/blog-trends-desktop.jpg"
+                      srcset="./img/main/blog-trends-desktop@2x.jpg 2x"
+                      alt="The woman with the bracelet"
+                    />
+                  </picture>
+                </div>
                 <div class="blog__article blog__article--trends">
                   <time datetime="2019-09-16">September 16, 2019</time>
                   <p>AW 19 trends</p>
@@ -838,7 +628,7 @@
             <h2>Frequently asked questions</h2>
             <ul class="questions__list">
               <li class="questions__item questions__item--opened">
-                <!--модификатор closed для закрытого пункта-->
+                <!--модификатор closed для закрытого пункта аккордеона-->
                 <h3>What materials are the jewellery made of?</h3>
                 <p>
                   Our jewellerry is made of solid gold, silver or leather. Also,
@@ -882,6 +672,7 @@
         </section>
 
         <section class="follow">
+          <h2 class="visually-hidden">Follow Us</h2>
           <div class="follow__wrapper container">
             <a class="follow__inst-link" href="#">
               <span>&commat;</span>Chjewellery</a
@@ -889,253 +680,167 @@
             <a class="follow__link link" href="#">Follow Us</a>
             <ul class="follow__list">
               <li class="follow__item">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-square-earrings-desktop.webp    1x,
-                      ./img/main/inst-square-earrings-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/inst-square-earrings-mobile.webp    1x,
-                      ./img/main/inst-square-earrings-mobile@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 230px; 2x: 460px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-square-earrings-desktop.jpg    1x,
-                      ./img/main/inst-square-earrings-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 133px; 2x: 266px -->
-                  <img
-                    src="./img/main/inst-square-earrings-mobile.jpg"
-                    srcset="./img/main/inst-square-earrings-mobile@2x.jpg 2x"
-                    alt="Square earrings"
-                  />
-                </picture>
+                <div class="follow__image-container">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/main/inst-square-earrings-desktop.webp    1x,
+                        ./img/main/inst-square-earrings-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 230px; 2x: 460px -->
+
+                    <img
+                      width="230"
+                      height="230"
+                      src="./img/main/inst-square-earrings-desktop.jpg"
+                      srcset="./img/main/inst-square-earrings-desktop@2x.jpg 2x"
+                      alt="Square earrings"
+                    />
+                  </picture>
+                </div>
               </li>
               <li class="follow__item follow__item--second">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-woman-earrings-desktop.webp    1x,
-                      ./img/main/inst-woman-earrings-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/main/inst-woman-earrings-tablet.webp    1x,
-                      ./img/main/inst-woman-earrings-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/inst-woman-earrings-mobile.webp    1x,
-                      ./img/main/inst-woman-earrings-mobile@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 399px; 2x: 798px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-woman-earrings-desktop.jpg    1x,
-                      ./img/main/inst-woman-earrings-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 331px; 2x: 662px -->
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./img/main/inst-woman-earrings-tablet.jpg    1x,
-                      ./img/main/inst-woman-earrings-tablet@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 133px; 2x: 266px -->
-                  <img
-                    src="./img/main/inst-woman-earrings-mobile.jpg"
-                    srcset="./img/main/inst-woman-earrings-mobile@2x.jpg 2x"
-                    alt="Woman shows off earrings"
-                  />
-                </picture>
+                <div
+                  class="follow__image-container follow__image-container--second"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/inst-woman-earrings-desktop.webp    1x,
+                        ./img/main/inst-woman-earrings-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 399px; 2x: 798px -->
+
+                    <img
+                      width="399"
+                      height="412"
+                      src="./img/main/inst-woman-earrings-desktop.jpg"
+                      srcset="./img/main/inst-woman-earrings-desktop@2x.jpg 2x"
+                      alt="Woman shows off earrings"
+                    />
+                  </picture>
+                </div>
               </li>
               <li class="follow__item follow__item--third">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-pink-ring-desktop.webp    1x,
-                      ./img/main/inst-pink-ring-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/inst-pink-ring-tablet.webp    1x,
-                      ./img/main/inst-pink-ring-tablet@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 230px; 2x: 460px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-pink-ring-desktop.jpg    1x,
-                      ./img/main/inst-pink-ring-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 133px; 2x: 266px -->
-                  <img
-                    src="./img/main/inst-pink-ring-tablet.jpg"
-                    srcset="./img/main/inst-pink-ring-tablet@2x.jpg 2x"
-                    alt="Pink ring on hand"
-                  />
-                </picture>
+                <div class="follow__image-container">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/inst-pink-ring-desktop.webp    1x,
+                        ./img/main/inst-pink-ring-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 230px; 2x: 460px -->
+
+                    <img
+                      width="230"
+                      height="230"
+                      src="./img/main/inst-pink-ring-desktop.jpg"
+                      srcset="./img/main/inst-pink-ring-desktop@2x.jpg 2x"
+                      alt="Pink ring on hand"
+                    />
+                  </picture>
+                </div>
               </li>
               <li class="follow__item follow__item--fourth">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-round-earrings-desktop.webp    1x,
-                      ./img/main/inst-round-earrings-desktop@2x.webp 2x
-                    "
-                  />
+                <div class="follow__image-container">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/inst-round-earrings-desktop.webp    1x,
+                        ./img/main/inst-round-earrings-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 230px; 2x: 460px -->
 
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/inst-round-earrings-tablet.webp    1x,
-                      ./img/main/inst-round-earrings-tablet@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 230px; 2x: 460px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-round-earrings-desktop.jpg    1x,
-                      ./img/main/inst-round-earrings-desktop@2x.jpg 2x
-                    "
-                  />
+                    <img
+                      width="230"
+                      height="230"
+                      src="./img/main/inst-round-earrings-desktop.jpg"
+                      srcset="./img/main/inst-round-earrings-desktop@2x.jpg 2x"
+                      alt="Round earrings"
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li class="follow__item">
+                <div
+                  class="follow__image-container follow__image-container--second-row"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/inst-pink-earrings-desktop.webp    1x,
+                        ./img/main/inst-pink-earrings-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 230px; 2x: 460px -->
 
-                  <!-- 1x: 133px; 2x: 266px -->
-                  <img
-                    src="./img/main/inst-round-earrings-tablet.jpg"
-                    srcset="./img/main/inst-round-earrings-tablet@2x.jpg 2x"
-                    alt="Round earrings"
-                  />
-                </picture>
+                    <img
+                      width="230"
+                      height="150"
+                      src="./img/main/inst-pink-earrings-desktop.jpg"
+                      srcset="./img/main/inst-pink-earrings-desktop@2x.jpg 2x"
+                      alt="Pink earrings"
+                    />
+                  </picture>
+                </div>
               </li>
               <li class="follow__item">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-pink-earrings-desktop.webp    1x,
-                      ./img/main/inst-pink-earrings-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/inst-pink-earrings-mobile.webp    1x,
-                      ./img/main/inst-pink-earrings-mobile@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 230px; 2x: 460px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-pink-earrings-desktop.jpg    1x,
-                      ./img/main/inst-pink-earrings-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 133px; 2x: 266px -->
-                  <img
-                    src="./img/main/inst-pink-earrings-mobile.jpg"
-                    srcset="./img/main/inst-pink-earrings-mobile@2x.jpg 2x"
-                    alt="Pink earrings"
-                  />
-                </picture>
+                <div
+                  class="follow__image-container follow__image-container--second-row"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/inst-gold-pendant-desktop.webp    1x,
+                        ./img/main/inst-gold-pendant-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 230px; 2x: 460px -->
+
+                    <img
+                      width="230"
+                      height="150"
+                      src="./img/main/inst-gold-pendant-desktop.jpg"
+                      srcset="./img/main/inst-gold-pendant-desktop@2x.jpg 2x"
+                      alt="Gold pendant"
+                    />
+                  </picture>
+                </div>
               </li>
               <li class="follow__item">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-gold-pendant-desktop.webp    1x,
-                      ./img/main/inst-gold-pendant-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/inst-gold-pendant-mobile.webp    1x,
-                      ./img/main/inst-gold-pendant-mobile@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 230px; 2x: 460px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-gold-pendant-desktop.jpg    1x,
-                      ./img/main/inst-gold-pendant-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 133px; 2x: 266px -->
-                  <img
-                    src="./img/main/inst-gold-pendant-mobile.jpg"
-                    srcset="./img/main/inst-gold-pendant-mobile@2x.jpg 2x"
-                    alt="Gold-pendant"
-                  />
-                </picture>
-              </li>
-              <li class="follow__item">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-rings-on-hands-desktop.webp    1x,
-                      ./img/main/inst-rings-on-hands-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./img/main/inst-rings-on-hands-mobile.webp    1x,
-                      ./img/main/inst-rings-on-hands-mobile@2x.webp 2x
-                    "
-                  />
-                  <!-- 1x: 230px; 2x: 460px -->
-                  <source
-                    media="(min-width: 1024px)"
-                    srcset="
-                      ./img/main/inst-rings-on-hands-desktop.jpg    1x,
-                      ./img/main/inst-rings-on-hands-desktop@2x.jpg 2x
-                    "
-                  />
-                  <!-- 1x: 133px; 2x: 266px -->
-                  <img
-                    src="./img/main/inst-rings-on-hands-mobile.jpg"
-                    srcset="./img/main/inst-rings-on-hands-mobile@2x.jpg 2x"
-                    alt="Rings on hands"
-                  />
-                </picture>
+                <div
+                  class="follow__image-container follow__image-container--second-row"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/main/inst-rings-on-hands-desktop.webp    1x,
+                        ./img/main/inst-rings-on-hands-desktop@2x.webp 2x
+                      "
+                    />
+                    <!-- 1x: 230px; 2x: 460px -->
+
+                    <img
+                      width="230"
+                      height="150"
+                      src="./img/main/inst-rings-on-hands-desktop.jpg"
+                      srcset="./img/main/inst-rings-on-hands-desktop@2x.jpg 2x"
+                      alt="Rings on hands"
+                    />
+                  </picture>
+                </div>
               </li>
             </ul>
           </div>
@@ -1243,6 +948,57 @@
           </div>
         </div>
       </footer>
+
+      <section class="login login--modal">
+        <h2 class="visually-hidden">Login popup</h2>
+        <div class="login__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+
+          <h2>Log In</h2>
+          <form
+            class="login__form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <ul class="login__list">
+              <li class="login__item">
+                <label>
+                  <input
+                    id="email-modal"
+                    type="email"
+                    name="email"
+                    placeholder="Your E-mail"
+                    required
+                  />
+                </label>
+              </li>
+              <li class="login__item">
+                <label>
+                  <input
+                    id="password-modal"
+                    type="password"
+                    autocomplete="current-password"
+                    placeholder="Password"
+                    required
+                  />
+                </label>
+              </li>
+            </ul>
+            <a href="#">Forgot your password?</a>
+            <button type="submit">Log In</button>
+            <div class="login__box">
+              <p>Don't have an account?</p>
+              <a href="#">Sign up</a>
+            </div>
+          </form>
+
+          <button type="button" aria-label="Close popup" data-close-modal>
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-close-popup"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
 
       <script src="js/vendor.min.js"></script>
       <script src="js/main.min.js"></script>

@@ -76,16 +76,6 @@
   }
 }
 
-.preview__catalog-link:hover {
-  color: $color-medium-wood;
-
-  &::after {
-    width: 120%;
-    left: -10px;
-    opacity: 0.6;
-  }
-}
-
 .preview__new-products-list {
   margin: 0;
   padding: 0;
@@ -137,8 +127,26 @@
   }
 }
 
+.preview__image-container {
+  height: auto;
+  max-width: 270px;
+
+  @include vp-1023 {
+    max-width: 324px;
+  }
+
+  @include vp-767 {
+    max-width: 97%;
+  }
+}
+
+.preview__new-product-item:hover p,
+.preview__new-product-item:hover span {
+  opacity: 0.7;
+}
+
 .preview__new-product-item img {
-  display: block;
+  object-fit: cover;
 }
 
 .preview p {
@@ -157,7 +165,6 @@
 
 .preview__new-product-item p {
   @include vp-767 {
-    max-width: 140px;
     margin-top: 16px;
   }
 }

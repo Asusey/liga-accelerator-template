@@ -14,4 +14,14 @@
     height: 1px;
     background-color: $color-medium-wood;
   }
+
+  &:hover {
+    color: $color-medium-wood;
+
+    &::after {
+      width: 120%;
+      left: -10px;
+      opacity: 0.6;
+    }
+  }
 }
