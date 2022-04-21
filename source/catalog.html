@@ -96,6 +96,7 @@
                   class="page-header__user-item-link page-header__user-item-link--login"
                   href="login.html"
                   target="_blank"
+                  data-open-modal="success"
                   >Login</a
                 >
               </li>
@@ -170,8 +171,9 @@
               >
                 <fieldset
                   class="catalog-filter__fildset catalog-filter__fildset--opened"
+                  data-filter-button
                 >
-                  <legend>Product</legend>
+                  <legend data-open-filter-list>Product</legend>
                   <button type="button" aria-label="open menu"></button>
 
                   <ul class="catalog-filter__list">
@@ -223,8 +225,9 @@
 
                 <fieldset
                   class="catalog-filter__fildset catalog-filter__fildset--closed"
+                  data-filter-button
                 >
-                  <legend>Material</legend>
+                  <legend data-open-filter-list>Material</legend>
                   <button type="button" aria-label="open menu"></button>
 
                   <ul class="catalog-filter__list">
@@ -253,8 +256,9 @@
 
                 <fieldset
                   class="catalog-filter__fildset catalog-filter__fildset--closed"
+                  data-filter-button
                 >
-                  <legend>Collection</legend>
+                  <legend data-open-filter-list>Collection</legend>
                   <button type="button" aria-label="open menu"></button>
 
                   <ul class="catalog-filter__list">
@@ -283,8 +287,9 @@
 
                 <fieldset
                   class="catalog-filter__fildset catalog-filter__fildset--price catalog-filter__fildset--opened"
+                  data-filter-button
                 >
-                  <legend>Price</legend>
+                  <legend data-open-filter-list>Price</legend>
                   <button type="button" aria-label="open menu"></button>
 
                   <div class="catalog-filter__range-controls">
@@ -820,6 +825,62 @@
           </div>
         </div>
       </footer>
+
+      <section
+        class="login modal modal--fit-content modal--no-scale"
+        data-modal="success"
+      >
+        <h2 class="visually-hidden">Login popup</h2>
+        <div class="login__wrapper">
+          <div class="modal__overlay" data-close-modal></div>
+          <div class="login__content">
+            <h2>Log In</h2>
+            <form
+              class="login__form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <ul class="login__list">
+                <li class="login__item">
+                  <label>
+                    <input
+                      id="email-modal"
+                      type="email"
+                      name="email"
+                      placeholder="Your E-mail"
+                      required
+                      autofocus
+                    />
+                  </label>
+                </li>
+                <li class="login__item">
+                  <label>
+                    <input
+                      id="password-modal"
+                      type="password"
+                      autocomplete="current-password"
+                      placeholder="Password"
+                      required
+                    />
+                  </label>
+                </li>
+              </ul>
+              <a href="#">Forgot your password?</a>
+              <button type="submit">Log In</button>
+              <div class="login__box">
+                <p>Don't have an account?</p>
+                <a href="#">Sign up</a>
+              </div>
+            </form>
+
+            <button type="button" aria-label="Close popup" data-close-modal>
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite_auto.svg#icon-close-popup"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
 
       <script src="js/vendor.min.js"></script>
       <script src="js/main.min.js"></script>

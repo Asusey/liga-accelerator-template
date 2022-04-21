@@ -93,6 +93,7 @@
                   class="page-header__user-item-link page-header__user-item-link--login"
                   href="login.html"
                   target="_blank"
+                  data-open-modal="success"
                   >Login</a
                 >
               </li>
@@ -152,381 +153,391 @@
         </section>
 
         <section class="preview">
-          <div class="preview__wrapper container">
-            <h2>New In</h2>
-            <ul class="preview__button-list">
-              <li class="preview__button-item">
-                <button type="button" aria-label="previous slide">
-                  <svg width="30" height="11">
-                    <use
-                      xlink:href="./img/sprite_auto.svg#icon-arrow-left-desktop"
-                    ></use>
-                  </svg>
-                </button>
-              </li>
-              <li class="preview__button-item">
-                <button type="button" aria-label="next slide">
-                  <svg width="30" height="11">
-                    <use
-                      xlink:href="./img/sprite_auto.svg#icon-arrow-right-desktop"
-                    ></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
-            <a class="preview__catalog-link link" href="catalog.html"
-              >Shop Now</a
-            >
-            <ul class="preview__new-products-list">
-              <li
-                class="preview__new-product-item preview__new-product-item--amethyst"
+          <div class="container">
+            <div class="preview__wrapper">
+              <h2>New In</h2>
+              <ul class="preview__button-list">
+                <li class="preview__button-item">
+                  <button
+                    type="button"
+                    aria-label="previous slide"
+                    data-prev-button
+                  >
+                    <svg width="30" height="11">
+                      <use
+                        xlink:href="./img/sprite_auto.svg#icon-arrow-left-desktop"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="preview__button-item">
+                  <button
+                    type="button"
+                    aria-label="next slide"
+                    data-next-button
+                  >
+                    <svg width="30" height="11">
+                      <use
+                        xlink:href="./img/sprite_auto.svg#icon-arrow-right-desktop"
+                      ></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+              <a class="preview__catalog-link link" href="catalog.html"
+                >Shop Now</a
               >
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/purple-gemstone-necklace-tablet.webp    1x,
-                          ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+              <ul class="preview__new-products-list">
+                <li
+                  class="preview__new-product-item"
+                >
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/purple-gemstone-necklace-tablet.webp    1x,
+                            ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
-                        "
-                        src="./img/main/purple-gemstone-necklace-tablet.jpg"
-                        alt="Necklace with amethyst"
-                    /></picture>
-                  </div>
-                  <p>Necklace with amethyst</p>
-                  <span>&#36; 145</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/layered-choker-necklace-tablet.webp    1x,
-                          ./img/main/layered-choker-necklace-tablet@2x.webp 2x
-                        "
-                      />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
+                          "
+                          src="./img/main/purple-gemstone-necklace-tablet.jpg"
+                          alt="Necklace with amethyst"
+                      /></picture>
+                    </div>
+                    <p>Necklace with amethyst</p>
+                    <span>&#36; 145</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/layered-choker-necklace-tablet.webp    1x,
+                            ./img/main/layered-choker-necklace-tablet@2x.webp 2x
+                          "
+                        />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
-                        "
-                        src="./img/main/layered-choker-necklace-tablet.jpg"
-                        alt="Layered сhoker"
-                      />
-                    </picture>
-                  </div>
-                  <p>Layered сhoker</p>
-                  <span>&#36; 115</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/dainty-gold-necklace-desktop.webp    1x,
-                          ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
+                          "
+                          src="./img/main/layered-choker-necklace-tablet.jpg"
+                          alt="Layered сhoker"
+                        />
+                      </picture>
+                    </div>
+                    <p>Layered сhoker</p>
+                    <span>&#36; 115</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/dainty-gold-necklace-desktop.webp    1x,
+                            ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
-                        "
-                        src="./img/main/dainty-gold-necklace-desktop.jpg"
-                        alt="Layered сhoker"
-                    /></picture>
-                  </div>
-                  <p>Gold chain</p>
-                  <span>&#36; 215</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/galaxy-earrings-desktop.webp    1x,
-                          ./img/main/galaxy-earrings-desktop@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
+                          "
+                          src="./img/main/dainty-gold-necklace-desktop.jpg"
+                          alt="Layered сhoker"
+                      /></picture>
+                    </div>
+                    <p>Gold chain</p>
+                    <span>&#36; 215</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/galaxy-earrings-desktop.webp    1x,
+                            ./img/main/galaxy-earrings-desktop@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
-                        src="./img/main/galaxy-earrings-desktop.jpg"
-                        alt="Galaxy earrings"
-                    /></picture>
-                  </div>
-                  <p>Galaxy earrings</p>
-                  <span>&#36; 95</span>
-                </a>
-              </li>
-              <li
-                class="preview__new-product-item preview__new-product-item--amethyst"
-              >
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/purple-gemstone-necklace-tablet.webp    1x,
-                          ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
+                          src="./img/main/galaxy-earrings-desktop.jpg"
+                          alt="Galaxy earrings"
+                      /></picture>
+                    </div>
+                    <p>Galaxy earrings</p>
+                    <span>&#36; 95</span>
+                  </a>
+                </li>
+                <li
+                  class="preview__new-product-item"
+                >
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/purple-gemstone-necklace-tablet.webp    1x,
+                            ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
-                        "
-                        src="./img/main/purple-gemstone-necklace-tablet.jpg"
-                        alt="Necklace with amethyst"
-                    /></picture>
-                  </div>
-                  <p>Necklace with amethyst</p>
-                  <span>&#36; 145</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/layered-choker-necklace-tablet.webp    1x,
-                          ./img/main/layered-choker-necklace-tablet@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
+                          "
+                          src="./img/main/purple-gemstone-necklace-tablet.jpg"
+                          alt="Necklace with amethyst"
+                      /></picture>
+                    </div>
+                    <p>Necklace with amethyst</p>
+                    <span>&#36; 145</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/layered-choker-necklace-tablet.webp    1x,
+                            ./img/main/layered-choker-necklace-tablet@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
-                        "
-                        src="./img/main/layered-choker-necklace-tablet.jpg"
-                        alt="Layered сhoker"
-                    /></picture>
-                  </div>
-                  <p>Layered сhoker</p>
-                  <span>&#36; 115</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/dainty-gold-necklace-desktop.webp    1x,
-                          ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
+                          "
+                          src="./img/main/layered-choker-necklace-tablet.jpg"
+                          alt="Layered сhoker"
+                      /></picture>
+                    </div>
+                    <p>Layered сhoker</p>
+                    <span>&#36; 115</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/dainty-gold-necklace-desktop.webp    1x,
+                            ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
-                        "
-                        src="./img/main/dainty-gold-necklace-desktop.jpg"
-                        alt="Layered сhoker"
-                    /></picture>
-                  </div>
-                  <p>Gold chain</p>
-                  <span>&#36; 215</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/galaxy-earrings-desktop.webp    1x,
-                          ./img/main/galaxy-earrings-desktop@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
+                          "
+                          src="./img/main/dainty-gold-necklace-desktop.jpg"
+                          alt="Layered сhoker"
+                      /></picture>
+                    </div>
+                    <p>Gold chain</p>
+                    <span>&#36; 215</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/galaxy-earrings-desktop.webp    1x,
+                            ./img/main/galaxy-earrings-desktop@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
-                        src="./img/main/galaxy-earrings-desktop.jpg"
-                        alt="Galaxy earrings"
-                    /></picture>
-                  </div>
-                  <p>Galaxy earrings</p>
-                  <span>&#36; 95</span>
-                </a>
-              </li>
-              <li
-                class="preview__new-product-item preview__new-product-item--amethyst"
-              >
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/purple-gemstone-necklace-tablet.webp    1x,
-                          ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
+                          src="./img/main/galaxy-earrings-desktop.jpg"
+                          alt="Galaxy earrings"
+                      /></picture>
+                    </div>
+                    <p>Galaxy earrings</p>
+                    <span>&#36; 95</span>
+                  </a>
+                </li>
+                <li
+                  class="preview__new-product-item"
+                >
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/purple-gemstone-necklace-tablet.webp    1x,
+                            ./img/main/purple-gemstone-necklace-tablet@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
-                        "
-                        src="./img/main/purple-gemstone-necklace-tablet.jpg"
-                        alt="Necklace with amethyst"
-                    /></picture>
-                  </div>
-                  <p>Necklace with amethyst</p>
-                  <span>&#36; 145</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/layered-choker-necklace-tablet.webp    1x,
-                          ./img/main/layered-choker-necklace-tablet@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/purple-gemstone-necklace-tablet@2x.jpg 2x
+                          "
+                          src="./img/main/purple-gemstone-necklace-tablet.jpg"
+                          alt="Necklace with amethyst"
+                      /></picture>
+                    </div>
+                    <p>Necklace with amethyst</p>
+                    <span>&#36; 145</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/layered-choker-necklace-tablet.webp    1x,
+                            ./img/main/layered-choker-necklace-tablet@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
-                        "
-                        src="./img/main/layered-choker-necklace-tablet.jpg"
-                        alt="Layered сhoker"
-                    /></picture>
-                  </div>
-                  <p>Layered сhoker</p>
-                  <span>&#36; 115</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/dainty-gold-necklace-desktop.webp    1x,
-                          ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/layered-choker-necklace-tablet@2x.jpg 2x
+                          "
+                          src="./img/main/layered-choker-necklace-tablet.jpg"
+                          alt="Layered сhoker"
+                      /></picture>
+                    </div>
+                    <p>Layered сhoker</p>
+                    <span>&#36; 115</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/dainty-gold-necklace-desktop.webp    1x,
+                            ./img/main/dainty-gold-necklace-desktop@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="
-                          ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
-                        "
-                        src="./img/main/dainty-gold-necklace-desktop.jpg"
-                        alt="Layered сhoker"
-                    /></picture>
-                  </div>
-                  <p>Gold chain</p>
-                  <span>&#36; 215</span>
-                </a>
-              </li>
-              <li class="preview__new-product-item">
-                <a href="#">
-                  <div class="preview__image-container">
-                    <picture>
-                      <!-- 1x: 324px; 2x: 648px -->
-                      <source
-                        type="image/webp"
-                        srcset="
-                          ./img/main/galaxy-earrings-desktop.webp    1x,
-                          ./img/main/galaxy-earrings-desktop@2x.webp 2x
-                        " />
-                      <!-- 1x: 324px; 2x: 648px -->
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="
+                            ./img/main/dainty-gold-necklace-desktop@2x.jpg 2x
+                          "
+                          src="./img/main/dainty-gold-necklace-desktop.jpg"
+                          alt="Layered сhoker"
+                      /></picture>
+                    </div>
+                    <p>Gold chain</p>
+                    <span>&#36; 215</span>
+                  </a>
+                </li>
+                <li class="preview__new-product-item">
+                  <a href="#">
+                    <div class="preview__image-container">
+                      <picture>
+                        <!-- 1x: 324px; 2x: 648px -->
+                        <source
+                          type="image/webp"
+                          srcset="
+                            ./img/main/galaxy-earrings-desktop.webp    1x,
+                            ./img/main/galaxy-earrings-desktop@2x.webp 2x
+                          " />
+                        <!-- 1x: 324px; 2x: 648px -->
 
-                      <img
-                        width="324"
-                        height="340"
-                        srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
-                        src="./img/main/galaxy-earrings-desktop.jpg"
-                        alt="Galaxy earrings"
-                    /></picture>
-                  </div>
-                  <p>Galaxy earrings</p>
-                  <span>&#36; 95</span>
-                </a>
-              </li>
-            </ul>
+                        <img
+                          width="324"
+                          height="340"
+                          srcset="./img/main/galaxy-earrings-desktop@2x.jpg 2x"
+                          src="./img/main/galaxy-earrings-desktop.jpg"
+                          alt="Galaxy earrings"
+                      /></picture>
+                    </div>
+                    <p>Galaxy earrings</p>
+                    <span>&#36; 95</span>
+                  </a>
+                </li>
+              </ul>
 
-            <ul class="preview__toggle-list">
-              <li class="preview__toggle-item preview__toggle-item--current">
-                <button type="button" aria-label="first slide">1</button>
-                <span>of</span>
-              </li>
-              <li class="preview__toggle-item">
-                <button type="button" aria-label="second slide">2</button>
-              </li>
-              <li class="preview__toggle-item">
-                <button type="button" aria-label="third slide">3</button>
-              </li>
-              <li class="preview__toggle-item">
-                <button type="button" aria-label="fourth slide">4</button>
-              </li>
-              <li class="preview__toggle-item">
-                <button type="button" aria-label="fifth slide">5</button>
-              </li>
-              <li class="preview__toggle-item">
-                <button type="button" aria-label="sixth slide">6</button>
-              </li>
-            </ul>
+              <ul class="preview__toggle-list">
+                <li class="preview__toggle-item preview__toggle-item--current">
+                  <button type="button" aria-label="first slide">1</button>
+                  <span>of</span>
+                </li>
+                <li class="preview__toggle-item">
+                  <button type="button" aria-label="second slide">2</button>
+                </li>
+                <li class="preview__toggle-item">
+                  <button type="button" aria-label="third slide">3</button>
+                </li>
+                <li class="preview__toggle-item">
+                  <button type="button" aria-label="fourth slide">4</button>
+                </li>
+                <li class="preview__toggle-item">
+                  <button type="button" aria-label="fifth slide">5</button>
+                </li>
+                <li class="preview__toggle-item">
+                  <button type="button" aria-label="sixth slide">6</button>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -627,9 +638,14 @@
           <div class="questions__wrapper container">
             <h2>Frequently asked questions</h2>
             <ul class="questions__list">
-              <li class="questions__item questions__item--opened">
+              <li
+                class="questions__item questions__item--opened"
+                data-accodion-item
+              >
                 <!--модификатор closed для закрытого пункта аккордеона-->
-                <h3>What materials are the jewellery made of?</h3>
+                <h3 data-closed-accordion>
+                  What materials are the jewellery made of?
+                </h3>
                 <p>
                   Our jewellerry is made of solid gold, silver or leather. Also,
                   some jewellery contains precious and semiprecious stones and
@@ -637,8 +653,13 @@
                 </p>
                 <button type="button"></button>
               </li>
-              <li class="questions__item questions__item--closed">
-                <h3>Which countries do&nbsp;you deliver&nbsp;to?</h3>
+              <li
+                class="questions__item questions__item--closed"
+                data-accodion-item
+              >
+                <h3 data-closed-accordion>
+                  Which countries do&nbsp;you deliver&nbsp;to?
+                </h3>
                 <p>
                   Our jewellerry is made of solid gold, silver or leather. Also,
                   some jewellery contains precious and semiprecious stones and
@@ -646,8 +667,13 @@
                 </p>
                 <button type="button"></button>
               </li>
-              <li class="questions__item questions__item--closed">
-                <h3>What are the payment&nbsp;methods?</h3>
+              <li
+                class="questions__item questions__item--closed"
+                data-accodion-item
+              >
+                <h3 data-closed-accordion>
+                  What are the payment&nbsp;methods?
+                </h3>
                 <p>
                   Our jewellerry is made of solid gold, silver or leather. Also,
                   some jewellery contains precious and semiprecious stones and
@@ -655,8 +681,11 @@
                 </p>
                 <button type="button"></button>
               </li>
-              <li class="questions__item questions__item--closed">
-                <h3>
+              <li
+                class="questions__item questions__item--closed"
+                data-accodion-item
+              >
+                <h3 data-closed-accordion>
                   Can I&nbsp;return the
                   jewellery&nbsp;if&nbsp;it&nbsp;didn&#39;t&nbsp;fit&nbsp;me?
                 </h3>
@@ -949,59 +978,64 @@
         </div>
       </footer>
 
-      <section class="login login--modal">
+      <section
+        class="login modal modal--fit-content modal--no-scale"
+        data-modal="success"
+      >
         <h2 class="visually-hidden">Login popup</h2>
         <div class="login__wrapper">
           <div class="modal__overlay" data-close-modal></div>
+          <div class="login__content">
+            <h2>Log In</h2>
+            <form
+              class="login__form"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
+              <ul class="login__list">
+                <li class="login__item">
+                  <label>
+                    <input
+                      id="email-modal"
+                      type="email"
+                      name="email"
+                      placeholder="Your E-mail"
+                      required
+                      autofocus
+                    />
+                  </label>
+                </li>
+                <li class="login__item">
+                  <label>
+                    <input
+                      id="password-modal"
+                      type="password"
+                      autocomplete="current-password"
+                      placeholder="Password"
+                      required
+                    />
+                  </label>
+                </li>
+              </ul>
+              <a href="#">Forgot your password?</a>
+              <button type="submit">Log In</button>
+              <div class="login__box">
+                <p>Don't have an account?</p>
+                <a href="#">Sign up</a>
+              </div>
+            </form>
 
-          <h2>Log In</h2>
-          <form
-            class="login__form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <ul class="login__list">
-              <li class="login__item">
-                <label>
-                  <input
-                    id="email-modal"
-                    type="email"
-                    name="email"
-                    placeholder="Your E-mail"
-                    required
-                  />
-                </label>
-              </li>
-              <li class="login__item">
-                <label>
-                  <input
-                    id="password-modal"
-                    type="password"
-                    autocomplete="current-password"
-                    placeholder="Password"
-                    required
-                  />
-                </label>
-              </li>
-            </ul>
-            <a href="#">Forgot your password?</a>
-            <button type="submit">Log In</button>
-            <div class="login__box">
-              <p>Don't have an account?</p>
-              <a href="#">Sign up</a>
-            </div>
-          </form>
-
-          <button type="button" aria-label="Close popup" data-close-modal>
-            <svg width="14" height="14">
-              <use xlink:href="img/sprite_auto.svg#icon-close-popup"></use>
-            </svg>
-          </button>
+            <button type="button" aria-label="Close popup" data-close-modal>
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite_auto.svg#icon-close-popup"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
       <script src="js/vendor.min.js"></script>
-      <script src="js/main.min.js"></script>
+      <script async src="js/main.min.js"></script>
     </div>
   </body>
 </html>

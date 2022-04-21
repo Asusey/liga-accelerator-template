@@ -66,3 +66,11 @@
   /* stylelint-disable-next-line */
   transition: none !important;
 }
+
+.is-closed {
+  display: none;
+}
+
+.is-opened {
+  display: block;
+}

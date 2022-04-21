@@ -289,6 +289,10 @@
     line-height: 36px;
     padding-left: 0;
     padding-bottom: 11px;
+
+    &:focus {
+      color: $color-default-white;
+    }
   }
 }
 

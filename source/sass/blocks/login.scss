@@ -1,14 +1,16 @@
-.login--modal {
-  display: none;
+.login__wrapper {
+  width: 100%;
+  min-height: 100%;
+  margin-top: 30px;
+  text-align: center;
 }
 
-.login__wrapper {
-  position: relative;
-  max-width: 430px;
-  margin: 29px auto 0;
+.login__content {
   padding-top: 159px;
   padding-bottom: 54px;
-  text-align: center;
+  position: relative;
+  max-width: 430px;
+  margin: 0 auto;
   background-color: $color-desert-storm;
   background-image: url("../../img/main/sweet-ice-cream-popup-desktop.jpg"), url("../../img/main/sweet-ice-cream-popup-desktop@2x.jpg");
   background-repeat: no-repeat;
@@ -86,6 +88,10 @@
   color: $color-zorba;
   border: none;
   background-color: $color-desert-storm;
+
+  &:focus {
+    outline: 1px solid $color-medium-wood;
+  }
 
   @include vp-767 {
     width: 90%;
