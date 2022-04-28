@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-
+import {initSwiper} from './vendor';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -12,26 +12,27 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-  const menuButton = document.querySelector('[data-open-menu]');
-  const pageHeader = document.querySelector('.page-header');
+  const MENU_BUTTON = document.querySelector('[data-open-menu]');
+  const PAGE_HEADER = document.querySelector('.page-header');
 
-  menuButton.addEventListener('click', function () {
-    if (pageHeader.classList.contains('page-header--closed')) {
-      pageHeader.classList.remove('page-header--closed');
-      pageHeader.classList.add('page-header--opened');
+  MENU_BUTTON.addEventListener('click', function () {
+    if (PAGE_HEADER.classList.contains('page-header--closed')) {
+      PAGE_HEADER.classList.remove('page-header--closed');
+      PAGE_HEADER.classList.add('page-header--opened');
       document.body.style.overflow = 'hidden';
     } else {
-      pageHeader.classList.remove('page-header--opened');
-      pageHeader.classList.add('page-header--closed');
+      PAGE_HEADER.classList.remove('page-header--opened');
+      PAGE_HEADER.classList.add('page-header--closed');
       document.body.style.overflow = '';
     }
   });
 
-  let accordionButtons = document.querySelectorAll('[data-closed-accordion]');
+  const ACCORDION_BUTTONS = document.querySelectorAll('[data-closed-accordion]');
+  const ACCORDION_CLOSE_BUTTONS = document.querySelectorAll('[data-accorion-btn]');
 
-  accordionButtons.forEach((accordionButton) => {
-    accordionButton.addEventListener('click', function () {
-      let contentBlock = accordionButton.closest('[data-accodion-item]');
+  ACCORDION_CLOSE_BUTTONS.forEach((ACCORDION_CLOSE_BUTTON) => {
+    ACCORDION_CLOSE_BUTTON.addEventListener('click', function () {
+      let contentBlock = ACCORDION_CLOSE_BUTTON.closest('[data-accodion-item]');
 
       if (contentBlock.classList.contains('questions__item--opened')) {
         contentBlock.classList.remove('questions__item--opened');
@@ -43,11 +44,25 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  let filterButtons = document.querySelectorAll('[data-open-filter-list]');
+  ACCORDION_BUTTONS.forEach((ACCORDION_BUTTON) => {
+    ACCORDION_BUTTON.addEventListener('click', function () {
+      let contentBlock = ACCORDION_BUTTON.closest('[data-accodion-item]');
 
-  filterButtons.forEach((filterButton) => {
-    filterButton.addEventListener('click', function () {
-      let filterBlock = filterButton.closest('[data-filter-button]');
+      if (contentBlock.classList.contains('questions__item--opened')) {
+        contentBlock.classList.remove('questions__item--opened');
+        contentBlock.classList.add('questions__item--closed');
+      } else {
+        contentBlock.classList.remove('questions__item--closed');
+        contentBlock.classList.add('questions__item--opened');
+      }
+    });
+  });
+
+  const FILTER_BUTTONS = document.querySelectorAll('[data-open-filter-list]');
+
+  FILTER_BUTTONS.forEach((FILTER_BUTTON) => {
+    FILTER_BUTTON.addEventListener('click', function () {
+      let filterBlock = FILTER_BUTTON.closest('[data-filter-button]');
 
       if (filterBlock.classList.contains('catalog-filter__fildset--opened')) {
         filterBlock.classList.remove('catalog-filter__fildset--opened');
@@ -59,98 +74,58 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  let filterOpenButtons = document.querySelectorAll('[data-open-filter]');
-  let filter = document.querySelector('.catalog-filter');
-  let filterCloseButtons = document.querySelectorAll('[data-close-filter]');
+  const FILTER_OPEN_BUTTONS = document.querySelectorAll('[data-open-filter]');
+  const FILTER = document.querySelector('.catalog-filter');
+  const FILTER_CLOSE_BUTTONS = document.querySelectorAll('[data-close-filter]');
+  const FILTER_OVERLAY = document.querySelector('[data-close-modal-filter]');
 
   let showFilter = function () {
-    filter.classList.remove('catalog-filter--closed');
-    filter.classList.add('catalog-filter--opened');
+    FILTER.classList.remove('catalog-filter--closed');
+    FILTER.classList.add('catalog-filter--opened');
     document.body.style.overflow = 'hidden';
   };
 
   let closeFilter = function () {
-    filter.classList.remove('catalog-filter--opened');
-    filter.classList.add('catalog-filter--closed');
+    FILTER.classList.remove('catalog-filter--opened');
+    FILTER.classList.add('catalog-filter--closed');
     document.body.style.overflow = '';
   };
 
-  filterOpenButtons.forEach((filterOpenButton) => {
-    filterOpenButton.addEventListener('click', function () {
-      if (filter.classList.contains('catalog-filter--closed')) {
+  FILTER_OPEN_BUTTONS.forEach((FILTER_OPEN_BUTTON) => {
+    FILTER_OPEN_BUTTON.addEventListener('click', function () {
+      if (FILTER.classList.contains('catalog-filter--closed')) {
         showFilter();
       }
     });
   });
 
-  filterCloseButtons.forEach((filterCloseButton) => {
-    filterCloseButton.addEventListener('click', function () {
-      if (filter.classList.contains('catalog-filter--opened')) {
+  FILTER_CLOSE_BUTTONS.forEach((FILTER_CLOSE_BUTTON) => {
+    FILTER_CLOSE_BUTTON.addEventListener('click', function () {
+      if (FILTER.classList.contains('catalog-filter--opened')) {
         closeFilter();
       }
     });
   });
 
   window.addEventListener('keydown', function (evt) {
-    if (evt.keyCode === 27) {
-      if (filter.classList.contains('modal--opened')) {
-        closeFilter();
-      }
+    const isEscKey = evt.key === 'Escape' || evt.key === 'Esc';
+    if (isEscKey) {
+      evt.preventDefault();
+      closeFilter();
     }
   });
 
+  if (FILTER_OVERLAY) {
+    FILTER_OVERLAY.addEventListener('click', function () {
+      closeFilter();
+    });
+  }
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
 
   window.addEventListener('load', () => {
     initModals();
-    const swiper = new Swiper('.preview__wrapper', {
-      speed: 400,
-      spaceBetween: 30,
-      slideClass: 'preview__new-product-item',
-      wrapperClass: 'preview__new-products-list',
-      navigation: {
-        nextEl: '[data-next-button]',
-        prevEl: '[data-prev-button]',
-      },
-
-      pagination: {
-        el: '.preview__toggle-list',
-        clickable: true,
-        type: 'bullets',
-        bulletActiveClass: 'preview__toggle-item--current',
-        renderBullet(index, className) {
-          // return `<span class="${className}">${index + 1}</span>`;
-          return `<li class="preview__toggle-item ${className}">
-          <button type="button">${index + 1}</button>
-        </li>`;
-        },
-      },
-
-      breakpoints: {
-        320: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          allowTouchMove: true,
-          pagination: {
-            type: 'fraction',
-            renderFraction(currentClass, totalClass) {
-              return `<span class="${currentClass}"></span> of <span class="${totalClass}"></span>`;
-            },
-          },
-        },
-        768: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          allowTouchMove: true,
-        },
-        1024: {
-          slidesPerView: 4,
-          slidesPerGroup: 4,
-          allowTouchMove: false,
-        },
-      },
-    });
+    initSwiper();
   });
 });
 

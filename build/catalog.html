@@ -162,6 +162,10 @@
           <div class="catalog__wrapper container">
             <button type="button" data-open-filter>Filter</button>
             <section class="catalog-filter catalog-filter--closed">
+              <div
+                class="catalog-filter__overlay"
+                data-close-modal-filter
+              ></div>
               <h2 class="visually-hidden">Product filter</h2>
               <form
                 class="catalog-filter__form"
@@ -850,6 +854,7 @@
                       placeholder="Your E-mail"
                       required
                       autofocus
+                      data-email
                     />
                   </label>
                 </li>
@@ -881,9 +886,8 @@
           </div>
         </div>
       </section>
-
-      <script src="js/vendor.min.js"></script>
-      <script src="js/main.min.js"></script>
     </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
