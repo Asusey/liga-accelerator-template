@@ -12,41 +12,27 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-  const MENU_BUTTON = document.querySelector('[data-open-menu]');
-  const PAGE_HEADER = document.querySelector('.page-header');
+  const menuButton = document.querySelector('[data-open-menu]');
+  const pageHeader = document.querySelector('.page-header');
 
-  MENU_BUTTON.addEventListener('click', function () {
-    if (PAGE_HEADER.classList.contains('page-header--closed')) {
-      PAGE_HEADER.classList.remove('page-header--closed');
-      PAGE_HEADER.classList.add('page-header--opened');
+  menuButton.addEventListener('click', function () {
+    if (pageHeader.classList.contains('page-header--closed')) {
+      pageHeader.classList.remove('page-header--closed');
+      pageHeader.classList.add('page-header--opened');
       document.body.style.overflow = 'hidden';
     } else {
-      PAGE_HEADER.classList.remove('page-header--opened');
-      PAGE_HEADER.classList.add('page-header--closed');
+      pageHeader.classList.remove('page-header--opened');
+      pageHeader.classList.add('page-header--closed');
       document.body.style.overflow = '';
     }
   });
 
-  const ACCORDION_BUTTONS = document.querySelectorAll('[data-closed-accordion]');
-  const ACCORDION_CLOSE_BUTTONS = document.querySelectorAll('[data-accorion-btn]');
+  let accordionButtons = document.querySelectorAll('[data-closed-accordion]');
+  let accordionCloseButtons = document.querySelectorAll('[data-accorion-btn]');
 
-  ACCORDION_CLOSE_BUTTONS.forEach((ACCORDION_CLOSE_BUTTON) => {
-    ACCORDION_CLOSE_BUTTON.addEventListener('click', function () {
-      let contentBlock = ACCORDION_CLOSE_BUTTON.closest('[data-accodion-item]');
-
-      if (contentBlock.classList.contains('questions__item--opened')) {
-        contentBlock.classList.remove('questions__item--opened');
-        contentBlock.classList.add('questions__item--closed');
-      } else {
-        contentBlock.classList.remove('questions__item--closed');
-        contentBlock.classList.add('questions__item--opened');
-      }
-    });
-  });
-
-  ACCORDION_BUTTONS.forEach((ACCORDION_BUTTON) => {
-    ACCORDION_BUTTON.addEventListener('click', function () {
-      let contentBlock = ACCORDION_BUTTON.closest('[data-accodion-item]');
+  accordionCloseButtons.forEach((accordionCloseButton) => {
+    accordionCloseButton.addEventListener('click', function () {
+      let contentBlock = accordionCloseButton.closest('[data-accodion-item]');
 
       if (contentBlock.classList.contains('questions__item--opened')) {
         contentBlock.classList.remove('questions__item--opened');
@@ -58,11 +44,25 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const FILTER_BUTTONS = document.querySelectorAll('[data-open-filter-list]');
+  accordionButtons.forEach((accodionButton) => {
+    accodionButton.addEventListener('click', function () {
+      let contentBlock = accodionButton.closest('[data-accodion-item]');
 
-  FILTER_BUTTONS.forEach((FILTER_BUTTON) => {
-    FILTER_BUTTON.addEventListener('click', function () {
-      let filterBlock = FILTER_BUTTON.closest('[data-filter-button]');
+      if (contentBlock.classList.contains('questions__item--opened')) {
+        contentBlock.classList.remove('questions__item--opened');
+        contentBlock.classList.add('questions__item--closed');
+      } else {
+        contentBlock.classList.remove('questions__item--closed');
+        contentBlock.classList.add('questions__item--opened');
+      }
+    });
+  });
+
+  let filterButtons = document.querySelectorAll('[data-open-filter-list]');
+
+  filterButtons.forEach((filterButton) => {
+    filterButton.addEventListener('click', function () {
+      let filterBlock = filterButton.closest('[data-filter-button]');
 
       if (filterBlock.classList.contains('catalog-filter__fildset--opened')) {
         filterBlock.classList.remove('catalog-filter__fildset--opened');
@@ -74,49 +74,52 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const FILTER_OPEN_BUTTONS = document.querySelectorAll('[data-open-filter]');
-  const FILTER = document.querySelector('.catalog-filter');
-  const FILTER_CLOSE_BUTTONS = document.querySelectorAll('[data-close-filter]');
-  const FILTER_OVERLAY = document.querySelector('[data-close-modal-filter]');
+  let filterOpenButtons = document.querySelectorAll('[data-open-filter]');
+  const filter = document.querySelector('.catalog-filter');
+  let filterCloseButtons = document.querySelectorAll('[data-close-filter]');
+  const filterOverlay = document.querySelector('[data-close-modal-filter]');
 
   let showFilter = function () {
-    FILTER.classList.remove('catalog-filter--closed');
-    FILTER.classList.add('catalog-filter--opened');
+    filter.classList.remove('catalog-filter--closed');
+    filter.classList.add('catalog-filter--opened');
     document.body.style.overflow = 'hidden';
   };
 
   let closeFilter = function () {
-    FILTER.classList.remove('catalog-filter--opened');
-    FILTER.classList.add('catalog-filter--closed');
+    filter.classList.remove('catalog-filter--opened');
+    filter.classList.add('catalog-filter--closed');
     document.body.style.overflow = '';
   };
 
-  FILTER_OPEN_BUTTONS.forEach((FILTER_OPEN_BUTTON) => {
-    FILTER_OPEN_BUTTON.addEventListener('click', function () {
-      if (FILTER.classList.contains('catalog-filter--closed')) {
+  filterOpenButtons.forEach((filterOpenButton) => {
+    filterOpenButton.addEventListener('click', function () {
+      if (filter.classList.contains('catalog-filter--closed')) {
         showFilter();
       }
     });
   });
 
-  FILTER_CLOSE_BUTTONS.forEach((FILTER_CLOSE_BUTTON) => {
-    FILTER_CLOSE_BUTTON.addEventListener('click', function () {
-      if (FILTER.classList.contains('catalog-filter--opened')) {
+  filterCloseButtons.forEach((filterCloseButton) => {
+    filterCloseButton.addEventListener('click', function () {
+      if (filter.classList.contains('catalog-filter--opened')) {
         closeFilter();
       }
     });
   });
 
+  const ESCAPE_KEY = 'Escape';
+  const ESC_KEY = 'Esc';
+
   window.addEventListener('keydown', function (evt) {
-    const isEscKey = evt.key === 'Escape' || evt.key === 'Esc';
+    const isEscKey = evt.key === ESCAPE_KEY || evt.key === ESC_KEY;
     if (isEscKey) {
       evt.preventDefault();
       closeFilter();
     }
   });
 
-  if (FILTER_OVERLAY) {
-    FILTER_OVERLAY.addEventListener('click', function () {
+  if (filterOverlay) {
+    filterOverlay.addEventListener('click', function () {
       closeFilter();
     });
   }

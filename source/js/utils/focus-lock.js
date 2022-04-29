@@ -23,8 +23,9 @@ export class FocusLock {
   }
 
   _documentKeydownHandler(evt) {
+    const TAB_KEY = 'Tab';
     const activeElement = document.activeElement;
-    if (evt.key === 'Tab') {
+    if (evt.key === TAB_KEY) {
       if (!this._focusableElements.length) {
         evt.preventDefault();
         activeElement.blur();
@@ -41,11 +42,11 @@ export class FocusLock {
         return;
       }
     }
-    if (evt.key === 'Tab' && !evt.shiftKey && activeElement === this._focusableElements[this._focusableElements.length - 1]) {
+    if (evt.key === TAB_KEY && !evt.shiftKey && activeElement === this._focusableElements[this._focusableElements.length - 1]) {
       evt.preventDefault();
       this._focusableElements[0].focus();
     }
-    if (evt.key === 'Tab' && evt.shiftKey && activeElement === this._focusableElements[0]) {
+    if (evt.key === TAB_KEY && evt.shiftKey && activeElement === this._focusableElements[0]) {
       evt.preventDefault();
       this._focusableElements[this._focusableElements.length - 1].focus();
     }
