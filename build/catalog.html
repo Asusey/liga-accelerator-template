@@ -64,7 +64,7 @@
         <!--модификатор opened для открытого меню-->
         <div class="page-header__wrapper container">
           <div class="page-header__inner">
-            <button type="button" data-open-menu></button>
+            <button type="button" data-open-menu aria-label="Open menu"></button>
             <span class="visually-hidden">Open menu</span>
             <!--Форма поиска-->
             <form
@@ -72,7 +72,7 @@
               method="get"
               action="https://echo.htmlacademy.ru/"
             >
-              <button type="submit">
+              <button type="submit" aria-label="Search button">
                 <svg width="14" height="14">
                   <use xlink:href="./img/sprite_auto.svg#icon-search"></use>
                 </svg>
@@ -160,7 +160,7 @@
         <section class="catalog">
           <h2 class="visually-hidden">Сatalog page</h2>
           <div class="catalog__wrapper container">
-            <button type="button" data-open-filter>Filter</button>
+            <button type="button" aria-label="Open filter" data-open-filter>Filter</button>
             <section class="catalog-filter catalog-filter--closed">
               <div
                 class="catalog-filter__overlay"
@@ -178,7 +178,7 @@
                   data-filter-button
                 >
                   <legend data-open-filter-list>Product</legend>
-                  <button type="button" aria-label="open menu"></button>
+                  <button type="button" aria-label="Open menu"></button>
 
                   <ul class="catalog-filter__list">
                     <li class="catalog-filter__item">
@@ -232,7 +232,7 @@
                   data-filter-button
                 >
                   <legend data-open-filter-list>Material</legend>
-                  <button type="button" aria-label="open menu"></button>
+                  <button type="button" aria-label="Open menu"></button>
 
                   <ul class="catalog-filter__list">
                     <li class="catalog-filter__item">
@@ -263,7 +263,7 @@
                   data-filter-button
                 >
                   <legend data-open-filter-list>Collection</legend>
-                  <button type="button" aria-label="open menu"></button>
+                  <button type="button" aria-label="Open menu"></button>
 
                   <ul class="catalog-filter__list">
                     <li class="catalog-filter__item">
@@ -294,7 +294,7 @@
                   data-filter-button
                 >
                   <legend data-open-filter-list>Price</legend>
-                  <button type="button" aria-label="open menu"></button>
+                  <button type="button" aria-label="Open menu"></button>
 
                   <div class="catalog-filter__range-controls">
                     <div class="catalog-filter__scale">
@@ -341,11 +341,11 @@
                   </ul>
                 </fieldset>
                 <div class="catalog-filter__button-list">
-                  <button type="submit">Apply</button>
-                  <button type="reset">Clear All</button>
+                  <button type="submit" aria-label="Apply button">Apply</button>
+                  <button type="reset" aria-label="Clear All">Clear All</button>
                   <button
                     type="button"
-                    aria-label="close filter"
+                    aria-label="Close filter"
                     data-close-filter
                   >
                     <svg width="32" height="32">
@@ -717,10 +717,10 @@
 
               <ul class="product-catalog__prev-button-list">
                 <li class="product-catalog__prev-button-item">
-                  <button type="button">Previous</button>
+                  <button type="button" aria-label="Previous">Previous</button>
                 </li>
                 <li class="product-catalog__prev-button-item">
-                  <button type="button">Next</button>
+                  <button type="button" aria-label="Next">Next</button>
                 </li>
               </ul>
             </section>
@@ -747,7 +747,7 @@
                 required
                 placeholder="Your E-mail"
               />
-              <button type="submit">
+              <button type="submit" aria-label="Sign Up">
                 Sign Up
                 <svg width="30" height="11">
                   <use
@@ -871,7 +871,7 @@
                 </li>
               </ul>
               <a href="#">Forgot your password?</a>
-              <button type="submit">Log In</button>
+              <button type="submit" aria-label="Log in">Log In</button>
               <div class="login__box">
                 <p>Don't have an account?</p>
                 <a href="#">Sign up</a>
