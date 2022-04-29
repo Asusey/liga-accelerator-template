@@ -12,6 +12,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  const ESCAPE_KEY = 'Escape';
+  const ESC_KEY = 'Esc';
+
   const menuButton = document.querySelector('[data-open-menu]');
   const pageHeader = document.querySelector('.page-header');
 
@@ -106,9 +109,6 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-  const ESCAPE_KEY = 'Escape';
-  const ESC_KEY = 'Esc';
 
   window.addEventListener('keydown', function (evt) {
     const isEscKey = evt.key === ESCAPE_KEY || evt.key === ESC_KEY;

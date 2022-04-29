@@ -1,3 +1,5 @@
+const TAB_KEY = 'Tab';
+
 const SELECTORS = [
   'a[href]',
   'area[href]',
@@ -23,7 +25,6 @@ export class FocusLock {
   }
 
   _documentKeydownHandler(evt) {
-    const TAB_KEY = 'Tab';
     const activeElement = document.activeElement;
     if (evt.key === TAB_KEY) {
       if (!this._focusableElements.length) {
