@@ -64,7 +64,11 @@
         <!--модификатор opened для открытого меню-->
         <div class="page-header__wrapper container">
           <div class="page-header__inner">
-            <button type="button" data-open-menu aria-label="Open menu"></button>
+            <button
+              type="button"
+              data-open-menu
+              aria-label="Open menu"
+            ></button>
             <span class="visually-hidden">Open menu</span>
             <!--Форма поиска-->
             <form
@@ -104,9 +108,8 @@
                 <a
                   class="page-header__user-item-link page-header__user-item-link--basket"
                   href="#"
-                  >Cart</a
+                  >Cart <span>0</span></a
                 >
-                <span>0</span>
               </li>
             </ul>
           </div>
@@ -160,7 +163,9 @@
         <section class="catalog">
           <h2 class="visually-hidden">Сatalog page</h2>
           <div class="catalog__wrapper container">
-            <button type="button" aria-label="Open filter" data-open-filter>Filter</button>
+            <button type="button" aria-label="Open filter" data-open-filter>
+              Filter
+            </button>
             <section class="catalog-filter catalog-filter--closed">
               <div
                 class="catalog-filter__overlay"
