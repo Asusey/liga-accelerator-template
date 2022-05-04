@@ -22,7 +22,6 @@
   letter-spacing: 0.03em;
 
   @include vp-1023 {
-    //max-width: 246px;
     line-height: 44px;
     text-align: center;
   }
@@ -47,7 +46,10 @@
 
 .questions__list h3 {
   cursor: pointer;
-  margin: 0 0 8px 42px;
+  margin: 0;
+  padding-left: 42px;
+  padding-top: 43px;
+  padding-bottom: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -58,52 +60,45 @@
   }
 
   @include vp-1023 {
-    margin-left: 48px;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
+    padding-left: 48px;
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 22px;
-    margin-left: 24px;
-    margin-bottom: 15px;
-    max-width: 64%;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+    max-width: 72%;
   }
 }
 
 .questions__list p {
   margin: 0 0 0 50px;
+  padding-bottom: 39px;
   max-width: 528px;
   font-weight: 400;
   font-size: 16px;
 
   @include vp-1023 {
     max-width: 529px;
+    padding-bottom: 46px;
   }
 
   @include vp-767 {
     font-size: 14px;
     line-height: 20px;
     max-width: 72%;
+    padding-bottom: 18px;
     margin-left: 24px;
   }
 }
 
 .questions__item {
-  padding: 43px 0 41px;
   position: relative;
   list-style: none;
   border-bottom: 1px solid $color-medium-wood;
-
-  @include vp-1023 {
-    padding-top: 44px;
-    padding-bottom: 44px;
-  }
-
-  @include vp-767 {
-    padding-top: 15px;
-    padding-bottom: 18px;
-  }
 }
 
 .questions__item:last-child {
@@ -157,16 +152,16 @@
   }
 }
 
-.questions__item--closed {
-  padding-bottom: 36px;
+.questions__item--closed h3 {
+  padding-bottom: 44px;
 
   @include vp-1023 {
-    padding-bottom: 18px;
+    padding-bottom: 44px;
   }
 
   @include vp-767 {
     padding-top: 19px;
-    padding-bottom: 3px;
+    padding-bottom: 18px;
   }
 }
 

@@ -1741,7 +1741,10 @@ button,
 
 .questions__list h3 {
   cursor: pointer;
-  margin: 0 0 8px 42px;
+  margin: 0;
+  padding-left: 42px;
+  padding-top: 43px;
+  padding-bottom: 8px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1754,13 +1757,13 @@ button,
 
 .questions__list p {
   margin: 0 0 0 50px;
+  padding-bottom: 39px;
   max-width: 528px;
   font-weight: 400;
   font-size: 16px;
 }
 
 .questions__item {
-  padding: 43px 0 41px;
   position: relative;
   list-style: none;
   border-bottom: 1px solid #a87b62;
@@ -1797,8 +1800,8 @@ button,
   background-size: 17px 10px;
 }
 
-.questions__item--closed {
-  padding-bottom: 36px;
+.questions__item--closed h3 {
+  padding-bottom: 44px;
 }
 
 .questions__item--closed p {
@@ -1826,7 +1829,7 @@ button,
   font-size: 42px;
 }
 
-.follow__inst-link {
+.follow__wrapper h2 {
   display: block;
   font-family: "Cormorant Garamond", "Gramond", serif;
   font-weight: 700;
@@ -2771,17 +2774,13 @@ button,
   }
 
   .questions__list h3 {
-    margin-left: 48px;
-    margin-bottom: 25px;
+    padding-left: 48px;
+    padding-bottom: 25px;
   }
 
   .questions__list p {
     max-width: 529px;
-  }
-
-  .questions__item {
-    padding-top: 44px;
-    padding-bottom: 44px;
+    padding-bottom: 46px;
   }
 
   .questions__item button {
@@ -2795,8 +2794,8 @@ button,
     background-size: 25px 14px;
   }
 
-  .questions__item--closed {
-    padding-bottom: 18px;
+  .questions__item--closed h3 {
+    padding-bottom: 44px;
   }
 
   .questions__item--closed button::after {
@@ -2809,7 +2808,7 @@ button,
     padding-top: 21px;
   }
 
-  .follow__inst-link {
+  .follow__wrapper h2 {
     margin-bottom: 20px;
   }
 
@@ -3281,21 +3280,18 @@ button,
   .questions__list h3 {
     font-size: 16px;
     line-height: 22px;
-    margin-left: 24px;
-    margin-bottom: 15px;
-    max-width: 64%;
+    padding-top: 16px;
+    padding-left: 24px;
+    padding-bottom: 15px;
+    max-width: 72%;
   }
 
   .questions__list p {
     font-size: 14px;
     line-height: 20px;
     max-width: 72%;
-    margin-left: 24px;
-  }
-
-  .questions__item {
-    padding-top: 15px;
     padding-bottom: 18px;
+    margin-left: 24px;
   }
 
   .questions__item button {
@@ -3307,9 +3303,9 @@ button,
     background-size: 22px 12px;
   }
 
-  .questions__item--closed {
+  .questions__item--closed h3 {
     padding-top: 19px;
-    padding-bottom: 3px;
+    padding-bottom: 18px;
   }
 
   .questions__item--closed button::after {
