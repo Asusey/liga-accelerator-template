@@ -2013,19 +2013,22 @@ button,
   appearance: none;
 }
 
-.catalog-filter__form span {
+.catalog-filter__form input[type="checkbox"] + span {
+  display: block;
   position: absolute;
   top: 0;
   left: 34px;
-  display: block;
   width: 16px;
   height: 15px;
-  border: 1px solid #a87b62;
+  cursor: pointer;
 }
 
-.catalog-filter__form input:checked + span {
+.catalog-filter__form input[type="checkbox"]:checked + span {
   background-color: #a87b62;
-  cursor: pointer;
+}
+
+.catalog-filter__form input[type="checkbox"]:not(:checked) + span {
+  border: 1px solid #a87b62;
 }
 
 .catalog-filter__form legend {
@@ -2428,7 +2431,6 @@ button,
 
   .page-header__wrapper {
     position: relative;
-    padding-top: 23px;
     padding-bottom: 132px;
   }
 
@@ -2774,8 +2776,8 @@ button,
   }
 
   .questions__list h3 {
-    padding-left: 48px;
     padding-bottom: 25px;
+    padding-left: 48px;
   }
 
   .questions__list p {
@@ -2943,7 +2945,7 @@ button,
     padding-top: 72px;
   }
 
-  .catalog-filter__form span {
+  .catalog-filter__form input[type="checkbox"] + span {
     width: 18px;
     height: 18px;
     top: 1px;
@@ -3281,8 +3283,8 @@ button,
     font-size: 16px;
     line-height: 22px;
     padding-top: 16px;
-    padding-left: 24px;
     padding-bottom: 15px;
+    padding-left: 24px;
     max-width: 72%;
   }
 

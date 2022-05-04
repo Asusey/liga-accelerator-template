@@ -26,7 +26,6 @@
 
   @include vp-1023 {
     position: relative;
-    padding-top: 23px;
     padding-bottom: 132px;
   }
 
@@ -87,9 +86,9 @@
   @include vp-1023 {
     display: block;
     position: absolute;
-    width: 88.7%;
+    width: 88.5%;
     margin-top: 109px;
-    top: 23px;
+    top: 29px;
     left: 44px;
   }
 
