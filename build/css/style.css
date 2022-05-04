@@ -1386,7 +1386,7 @@ button,
   line-height: 130%;
   color: #ffffff;
   background-repeat: no-repeat;
-  background-image: url("../../img/main/main-desktop.jpg"), url("../../img/main/main-desktop@2x.jpg");
+  background-image: url("../img/main/main-desktop.jpg"), url("../img/main/main-desktop@2x.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1792,7 +1792,7 @@ button,
   height: 25px;
   top: 2px;
   left: 8px;
-  background-image: url("../../img/svg/arrow-up-desktop.svg");
+  background-image: url("../img/svg/arrow-up-desktop.svg");
   background-repeat: no-repeat;
   background-size: 17px 10px;
 }
@@ -1812,7 +1812,7 @@ button,
   height: 25px;
   top: 2px;
   left: 8px;
-  background-image: url("../../img/svg/arrow-down-desktop.svg");
+  background-image: url("../img/svg/arrow-down-desktop.svg");
   background-repeat: no-repeat;
   background-size: 17px 10px;
 }
@@ -1896,7 +1896,7 @@ button,
 }
 
 .intro-catalog {
-  background-image: url("../../img/catalog/catalog-desktop.jpg"), url("../../img/catalog/catalog-desktop@2x.jpg");
+  background-image: url("../img/catalog/catalog-desktop.jpg"), url("../img/catalog/catalog-desktop@2x.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -1967,7 +1967,7 @@ button,
   height: 10px;
   top: 3px;
   left: 0;
-  background-image: url("../../img/svg/arrow-up-desktop.svg");
+  background-image: url("../img/svg/arrow-up-desktop.svg");
   background-size: 17px 10px;
   background-repeat: no-repeat;
 }
@@ -1979,7 +1979,7 @@ button,
   height: 10px;
   top: 3px;
   left: 0;
-  background-image: url("../../img/svg/arrow-down-desktop.svg");
+  background-image: url("../img/svg/arrow-down-desktop.svg");
 }
 
 .catalog-filter__fildset--closed .catalog-filter__list {
@@ -2269,7 +2269,7 @@ button,
   max-width: 430px;
   margin: 0 auto;
   background-color: #f0eae4;
-  background-image: url("../../img/main/sweet-ice-cream-popup-desktop.jpg"), url("../../img/main/sweet-ice-cream-popup-desktop@2x.jpg");
+  background-image: url("../img/main/sweet-ice-cream-popup-desktop.jpg"), url("../img/main/sweet-ice-cream-popup-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   -webkit-box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
@@ -2562,7 +2562,7 @@ button,
   }
 
   .page-header--closed .page-header__user-item-link--basket::after {
-    background-image: url("../../img/svg/basket-black.svg");
+    background-image: url("../img/svg/basket-black.svg");
   }
 
   .page-header--closed .page-header__nav {
@@ -2600,7 +2600,7 @@ button,
     left: -2px;
     width: 20px;
     height: 18px;
-    background-image: url("../../img/svg/basket-white.svg");
+    background-image: url("../img/svg/basket-white.svg");
   }
 
   .page-header--nojs [data-open-menu] {
@@ -2649,7 +2649,7 @@ button,
   }
 
   .intro-main {
-    background-image: url("../../img/main/main-tablet.jpg"), url("../../img/main/main-tablet@2x.jpg");
+    background-image: url("../img/main/main-tablet.jpg"), url("../img/main/main-tablet@2x.jpg");
     background-size: 100% auto;
   }
 
@@ -2842,7 +2842,7 @@ button,
   }
 
   .intro-catalog {
-    background-image: url("../../img/catalog/catalog-tablet.jpg"), url("../../img/catalog/catalog-tablet@2x.jpg");
+    background-image: url("../img/catalog/catalog-tablet.jpg"), url("../img/catalog/catalog-tablet@2x.jpg");
     background-size: 100% auto;
   }
 
@@ -3177,7 +3177,7 @@ button,
   }
 
   .intro-main {
-    background-image: url("../../img/main/main-mobile.jpg"), url("../../img/main/main-mobile@2x.jpg");
+    background-image: url("../img/main/main-mobile.jpg"), url("../img/main/main-mobile@2x.jpg");
     background-size: 100% auto;
   }
 
@@ -3341,7 +3341,7 @@ button,
   }
 
   .intro-catalog {
-    background-image: url("../../img/catalog/catalog-mobile.jpg"), url("../../img/catalog/catalog-mobile@2x.jpg");
+    background-image: url("../img/catalog/catalog-mobile.jpg"), url("../img/catalog/catalog-mobile@2x.jpg");
     background-size: 100% auto;
   }
 
@@ -3461,7 +3461,7 @@ button,
     max-width: 270px;
     padding-top: 95px;
     padding-bottom: 39px;
-    background-image: url("../../img/main/sweet-ice-cream-popup-mobile.jpg"), url("../../img/main/sweet-ice-cream-popup-mobile@2x.jpg");
+    background-image: url("../img/main/sweet-ice-cream-popup-mobile.jpg"), url("../img/main/sweet-ice-cream-popup-mobile@2x.jpg");
   }
 
   .login h2 {

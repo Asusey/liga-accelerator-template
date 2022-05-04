@@ -12,7 +12,7 @@
   max-width: 430px;
   margin: 0 auto;
   background-color: $color-desert-storm;
-  background-image: url("../../img/main/sweet-ice-cream-popup-desktop.jpg"), url("../../img/main/sweet-ice-cream-popup-desktop@2x.jpg");
+  background-image: url("../img/main/sweet-ice-cream-popup-desktop.jpg"), url("../img/main/sweet-ice-cream-popup-desktop@2x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   box-shadow: 0 5px 32px $color-shadow-light-brown;
@@ -21,7 +21,7 @@
     max-width: 270px;
     padding-top: 95px;
     padding-bottom: 39px;
-    background-image: url("../../img/main/sweet-ice-cream-popup-mobile.jpg"), url("../../img/main/sweet-ice-cream-popup-mobile@2x.jpg");
+    background-image: url("../img/main/sweet-ice-cream-popup-mobile.jpg"), url("../img/main/sweet-ice-cream-popup-mobile@2x.jpg");
   }
 }
 

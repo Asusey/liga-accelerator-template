@@ -148,7 +148,7 @@
     height: 10px;
     top: 3px;
     left: 0;
-    background-image: url("../../img/svg/arrow-up-desktop.svg");
+    background-image: url("../img/svg/arrow-up-desktop.svg");
     background-size: 17px 10px;
     background-repeat: no-repeat;
 
@@ -174,7 +174,7 @@
     height: 10px;
     top: 3px;
     left: 0;
-    background-image: url("../../img/svg/arrow-down-desktop.svg");
+    background-image: url("../img/svg/arrow-down-desktop.svg");
 
     @include vp-1023 {
       width: 25px;
