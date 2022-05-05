@@ -8,7 +8,7 @@ const initSwiper = () => {
 
     observer: true,
     observeParents: true,
-    loop: true,
+    loop: false,
 
     freeMode: true,
     watchSlidesVisibility: true,

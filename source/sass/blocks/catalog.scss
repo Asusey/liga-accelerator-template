@@ -224,7 +224,7 @@
   appearance: none;
 }
 
-.catalog-filter__form input[type="checkbox"]+span {
+.catalog-filter__form input[type="checkbox"] + span {
   display: block;
   position: absolute;
   top: 0;
@@ -241,11 +241,11 @@
   }
 }
 
-.catalog-filter__form input[type="checkbox"]:checked+span {
+.catalog-filter__form input[type="checkbox"]:checked + span {
   background-color: $color-medium-wood;
 }
 
-.catalog-filter__form input[type="checkbox"]:not(:checked)+span {
+.catalog-filter__form input[type="checkbox"]:not(:checked) + span {
   border: 1px solid $color-medium-wood;
 }
 

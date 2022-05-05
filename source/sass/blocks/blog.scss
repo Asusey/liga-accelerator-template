@@ -5,10 +5,13 @@
 
   @include vp-1023 {
     padding-top: 19px;
+    padding-bottom: 0;
+    margin-bottom: 74px;
   }
 
   @include vp-767 {
     padding-top: 9px;
+    margin-bottom: 56px;
   }
 }
 
@@ -45,7 +48,6 @@
 
 .blog__article {
   background-color: $color-desert-storm;
-  //max-width: 50%;
   width: 100%;
   height: auto;
   padding-top: 64px;
@@ -53,7 +55,6 @@
   @include vp-767 {
     max-width: 100%;
     padding-top: 41px;
-    padding-bottom: 45px;
   }
 }
 
@@ -79,33 +80,49 @@
 
 .blog__article-link {
   max-width: 100px;
+  margin-bottom: 68px;
 
   &::after {
     width: 97%;
     top: 36px;
     left: 2px;
   }
+
+  @include vp-767 {
+    margin-bottom: 45px;
+  }
 }
 
 .blog__article--trends {
   position: absolute;
   width: 50%;
-  height: 47.5%;
   bottom: 0;
   right: 0;
   align-self: flex-end;
 
   @include vp-1023 {
-    height: 100%;
     width: 100%;
+    height: 100%;
     padding-top: 82px;
     position: sticky;
+    align-self: baseline;
   }
 
   @include vp-767 {
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 62px;
+    padding-top: 57px;
+  }
+}
+
+.blog__article--trends a {
+  margin-bottom: 103px;
+
+  @include vp-1023 {
+    margin-bottom: 82px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 60px;
   }
 }
 
@@ -126,13 +143,13 @@
   grid-gap: 30px;
 
   @include vp-1023 {
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
+    display: flex;
+    grid-gap: 48px;
   }
 
   @include vp-767 {
+    flex-wrap: nowrap;
     grid-gap: 40px;
-    //max-width: 290px;
     margin-top: -10px;
     margin-left: auto;
     margin-right: auto;
@@ -145,12 +162,13 @@
   grid-template-columns: 1fr 1fr;
   text-align: center;
 
-  // @include vp-1023 {
-  //   justify-content: center;
-  // }
+  @include vp-1023 {
+    display: flex;
+  }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -162,26 +180,7 @@
 
 .blog__image-container {
   width: 100%;
-  height: 300px;
-
-  @include vp-767 {
-    height: 256px;
-  }
 }
-
-// .blog__image-container {
-//   max-width: 285px;
-//   //height: 100%;
-
-//   @include vp-1023 {
-//     height: 100%;
-//     width: 100%;
-//   }
-
-//   @include vp-767 {
-//     max-width: 290px;
-//   }
-// }
 
 .blog__item--trends {
   display: flex;
@@ -194,14 +193,12 @@
     grid-area: 3/1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
   }
 }
 
-.blog__image-container--trends {
-  width: 100%;
-  height: 630px;
-
-  @include vp-1023 {
-    height: 300px;
-  }
-}
+// .blog__image-container--trends {
+//   @include vp-767 {
+//     max-height: 84%;
+//   }
+// }

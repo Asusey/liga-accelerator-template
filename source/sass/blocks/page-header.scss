@@ -1,25 +1,3 @@
-.page-header {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 114px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $color-seashell;
-
-    @include vp-1023 {
-      display: none;
-    }
-
-    @include vp-767 {
-      display: none;
-    }
-  }
-}
-
 .page-header__wrapper {
   padding-top: 30px;
   padding-bottom: 10px;
@@ -73,10 +51,29 @@
   }
 }
 
-.page-header__inner {
+.page-header--closed .page-header__inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding-bottom: 12px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: -500%;
+    width: 2000%;
+    height: 1px;
+    background-color: $color-seashell;
+
+    @include vp-1023 {
+      display: none;
+    }
+
+    @include vp-767 {
+      display: none;
+    }
+  }
 }
 
 .page-header__search-form {
@@ -192,6 +189,12 @@
 
   @include vp-767 {
     padding-top: 4px;
+  }
+}
+
+.page-header--opened .page-header__user-list {
+  @include vp-1023 {
+    margin-left: auto;
   }
 }
 
@@ -346,8 +349,8 @@
 
 .page-header--closed button[type="button"] {
   @include vp-1023 {
-    top: 55px;
-    left: 44px;
+    top: 25px;
+    left: 0;
 
     &::before {
       background-color: $color-wood-bark;
@@ -356,8 +359,7 @@
   }
 
   @include vp-767 {
-    top: 38px;
-    left: 15px;
+    top: 18px;
   }
 }
 
@@ -385,11 +387,13 @@
 .page-header--closed .page-header__user-item-link--basket::after {
   @include vp-1023 {
     background-image: url("../img/svg/basket-black.svg");
+    top: 13px;
+    left: -7px;
   }
 
   @include vp-767 {
-    top: 10px;
-    left: -3px;
+    top: 13px;
+    left: 0;
   }
 }
 
@@ -438,11 +442,15 @@
   @include vp-1023 {
     position: absolute;
     content: "";
-    top: 13px;
-    left: -2px;
+    top: -65px;
+    left: 111px;
     width: 20px;
     height: 18px;
     background-image: url("../img/svg/basket-white.svg");
+  }
+
+  @include vp-767 {
+    top: -37px;
   }
 }
 
