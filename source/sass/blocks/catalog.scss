@@ -79,20 +79,18 @@
 }
 
 .catalog-filter__fildset {
-  padding: 69px 0 14px;
+  padding: 0 0 14px;
   margin: 0;
   position: relative;
   border: 1px solid $color-medium-wood;
   border-bottom: none;
 
   @include vp-1023 {
-    padding-top: 81px;
     padding-bottom: 20px;
     border: none;
     border-bottom: 1px solid $color-medium-wood;
 
     @include vp-767 {
-      padding-top: 71px;
       padding-bottom: 10px;
     }
   }
@@ -103,19 +101,22 @@
 }
 
 .catalog-filter__fildset--price {
-  padding-top: 69px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   margin-bottom: 35px;
 
   @include vp-1023 {
-    padding-top: 89px;
     padding-bottom: 18px;
     margin-bottom: 40px;
   }
 
   @include vp-767 {
-    padding-top: 80px;
     margin-bottom: 28px;
+  }
+}
+
+.catalog-filter__fildset--price h3 {
+  @include vp-1023 {
+    padding-bottom: 31px;
   }
 }
 
@@ -195,19 +196,15 @@
 }
 
 .catalog-filter__fildset--closed {
-  padding-top: 52px;
+  padding-bottom: 0;
 
   @include vp-1023 {
-    padding-top: 72px;
+    padding-bottom: 0;
   }
 
   @include vp-767 {
-    padding-top: 61px;
+    padding-bottom: 0;
   }
-}
-
-.catalog-filter__fildset--closed:last-of-type {
-  padding-top: 64px;
 }
 
 .catalog-filter__list {
@@ -249,11 +246,16 @@
   border: 1px solid $color-medium-wood;
 }
 
-.catalog-filter__form legend {
+.catalog-filter__form h3 {
   cursor: pointer;
-  position: absolute;
-  top: 23px;
-  left: 24px;
+  margin: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  padding-left: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
 
   &:hover {
     opacity: 0.7;
@@ -261,12 +263,12 @@
 
   @include vp-1023 {
     font-size: 18px;
-    top: 35px;
-    left: 21px;
+    padding-top: 37px;
+    padding-left: 22px;
   }
 
   @include vp-767 {
-    top: 25px;
+    padding-top: 26px;
   }
 }
 
@@ -454,4 +456,14 @@
 
 .catalog-filter__fildset--closed .catalog-filter__price-controls-list {
   display: none;
+}
+
+.catalog-filter__fildset--closed h3 {
+  @include vp-1023 {
+    padding-bottom: 34px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 25px;
+  }
 }

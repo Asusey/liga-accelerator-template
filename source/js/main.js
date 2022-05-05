@@ -30,8 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  let accordionButtons = document.querySelectorAll('[data-closed-accordion]');
-  let accordionCloseButtons = document.querySelectorAll('[data-accorion-btn]');
+  const accordionButtons = document.querySelectorAll('[data-closed-accordion]');
+  const accordionCloseButtons = document.querySelectorAll('[data-accorion-btn]');
 
   accordionCloseButtons.forEach((accordionCloseButton) => {
     accordionCloseButton.addEventListener('click', function () {
@@ -61,11 +61,26 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  let filterButtons = document.querySelectorAll('[data-open-filter-list]');
+  const filterButtons = document.querySelectorAll('[data-open-filter-list]');
+  const fildsetButtons = document.querySelectorAll('[data-open-filter-button]');
 
   filterButtons.forEach((filterButton) => {
     filterButton.addEventListener('click', function () {
       let filterBlock = filterButton.closest('[data-filter-button]');
+
+      if (filterBlock.classList.contains('catalog-filter__fildset--opened')) {
+        filterBlock.classList.remove('catalog-filter__fildset--opened');
+        filterBlock.classList.add('catalog-filter__fildset--closed');
+      } else {
+        filterBlock.classList.remove('catalog-filter__fildset--closed');
+        filterBlock.classList.add('catalog-filter__fildset--opened');
+      }
+    });
+  });
+
+  fildsetButtons.forEach((fildsetButton) => {
+    fildsetButton.addEventListener('click', function () {
+      let filterBlock = fildsetButton.closest('[data-filter-button]');
 
       if (filterBlock.classList.contains('catalog-filter__fildset--opened')) {
         filterBlock.classList.remove('catalog-filter__fildset--opened');
